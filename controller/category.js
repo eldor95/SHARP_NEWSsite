@@ -13,7 +13,6 @@ exports.createOne = async(req, res, next) => {
             res.json(error);
         });
 };
-
 exports.getAll = async(req, res, next) => {
     const result = await CATEGORY.find().sort({ date: 1 });
     res.render("./admin/category/index", {
