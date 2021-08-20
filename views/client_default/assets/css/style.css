@@ -1,0 +1,3995 @@
+/*-------------------------------------
+Template Name: Seomun | SEO And Digital Marketing Agency HTML Template. 
+Template URI: 
+Description: Seomun | SEO And Digital Marketing Agency HTML Template.
+Author: webtend
+Author URI: https://themeforest.net/user/webtend
+Version: 1.0
+---------------------------------------*/
+
+/*--------------------------------------
+CSS INDEX:-
+
+1.Default css
+2.preloader css
+3.index_1.html css
+4.index_2.html css
+5.About.html css
+6.SMM_service.html css
+7.PPC_service.html css
+8.SEO_service.html css
+9.portfolio_grid.html css
+10.portfolio_masonary.html css
+11.single_portfolio.html css
+12.shop.html css
+13.shop_details.html section
+14.FAQ.html css 
+15.Team.html css
+16.Testimonial.html css
+17.blog_grid.html css
+18.Blog_standard.html css
+19.blog_details.html css
+20.contact.html  css
+21.index.html css
+
+---------------------------------------*/
+/*
+	1. Satrt Default css 
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Rubik:300,400,500,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #170e2a;
+    text-decoration: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    color: #092232;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 90px;
+}
+
+h2 {
+    font-size: 69px;
+    line-height: 80px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+input,
+input:hover,
+input:focus {
+    outline: none;
+}
+
+textarea,
+textarea:hover,
+textarea:focus {
+    outline: none;
+}
+
+button,
+button:hover,
+button:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #7d8c95;
+    line-height: 26px;
+    overflow-x: hidden;
+}
+
+section {
+    overflow: hidden;
+}
+
+.section_padding {
+    padding: 120px 0;
+}
+
+.section_padding_2 {
+    padding: 60px 0;
+}
+
+.seomun_overlay {
+    background: #092232;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+
+.gray_bg {
+    background: #f7f6ff;
+}
+
+.dark_bg {
+    background: #092232;
+}
+
+.seomun_content_box {
+    position: relative;
+    display: block;
+}
+
+.seomun_content_box h2 span {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+span.seomun_span {
+    display: block;
+    color: #ef3b58;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 70px;
+}
+
+span.seomun_span:before {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: rgb(239, 59, 88);
+}
+
+.seomun_btn {
+    display: inline-block;
+    padding: 29px 60px;
+    background: #ef3b58;
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+.seomun_btn:hover,
+.seomun_btn:focus {
+    color: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(239, 59, 88, 0.2);
+}
+
+.seomun_img img {
+    width: 100%;
+}
+
+.seomun_section_title {
+    margin-bottom: 74px;
+}
+
+.seomun_section_title span {
+    display: block;
+    color: #ef3b58;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.seomun_section_title h2 {
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+.seomun_group {
+    position: relative;
+}
+
+.seomun_group i {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #ef3b58;
+}
+
+.dark_section_title h2 {
+    color: #fff;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/*
+	End Default css 
+*/
+
+/*
+	2. Start Preloader css 
+*/
+.preloader_area {
+    position: fixed;
+    background: #fff;
+    z-index: 11000;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.color-1 {
+    background-color: #092f5d !important;
+}
+
+.color-2 {
+    background-color: #ff5e14 !important;
+}
+
+.lodar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lodar ul {
+    display: flex;
+}
+
+.lodar ul li {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    animation: animate 1.4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        color: #ef3b58;
+    }
+
+    50% {
+        color: #ef3b58;
+    }
+
+    100% {
+        color: #ef3b58;
+    }
+}
+
+.lodar ul li:nth-child(1) {
+    animation-delay: .7s;
+}
+
+.lodar ul li:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.lodar ul li:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.lodar ul li:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.lodar ul li:nth-child(5) {
+    animation-delay: 2.5s;
+}
+
+.lodar ul li:nth-child(6) {
+    animation-delay: 3s;
+}
+
+/*
+	End Preloader css 
+*/
+
+
+/*==================================================
+		3. SEOMUN==Index_1.html
+====================================================*/
+
+
+/*
+	Start seomun_header area css
+*/
+.seomun_header_1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 337;
+}
+
+.seomun_inner_header {
+    position: relative;
+}
+
+.header_container {
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    background: #6f0ac8;
+    width: 100%;
+    z-index: 337;
+}
+
+.sticky .main_menu ul li a {
+    color: #fff;
+}
+
+.sticky .menu_button_box .select_option form select {
+    color: #ffff;
+}
+
+.sticky .menu_button_box ul li a {
+    color: #fff;
+}
+
+.sticky .menu_button_box ul li:before {
+    color: #fff;
+}
+
+.sticky .menu_button .phone_btn {
+    color: #fff;
+}
+.sticky .menu_button_box .select_option select option {
+    color: #6f0ac8;
+}
+/*
+	seomun_menu
+*/
+.seomun_menu {
+    position: relative;
+    float: right;
+}
+
+.main_menu ul li {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.main_menu ul li a {
+    display: block;
+    color: #092232;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 35px 0;
+}
+
+.main_menu ul li:hover > a {
+    color: #ef3b58;
+}
+
+.main_menu ul li ul.sub_menu {
+    position: absolute;
+    text-align: left;
+    width: 250px;
+    max-height: 0px;
+    padding: 0px;
+    top: 100%;
+    left: 0px;
+    background: #fff;
+    opacity: 0;
+    z-index: 9999;
+    border-top: 4px solid #ef3b58;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.main_menu ul li:hover > ul.sub_menu {
+    visibility: visible;
+    top: 100%;
+    max-height: 800px;
+    padding: 15px;
+    opacity: 1;
+    transition: all .5s;
+}
+
+.main_menu ul li ul.sub_menu li {
+    display: block;
+    margin: 0;
+}
+
+.main_menu ul li ul.sub_menu li:last-child {
+    border-bottom: none;
+}
+
+.main_menu ul li ul.sub_menu li a {
+    font-size: 14px;
+    color: #092f5d;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.main_menu ul li ul.sub_menu li:hover > a {
+    color: #ef3b58;
+}
+
+.main_menu ul li ul.sub_menu li ul.sub_menu {
+    left: 100%;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.main_menu ul li ul.sub_menu li:hover ul.sub_menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu_button {
+    text-align: center;
+}
+
+.menu_button a.phone_btn {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ef3b58;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 1px solid #ececff;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+.menu_button a.phone_btn:hover {
+    background: #ef3b58;
+    color: #fff;
+}
+
+.menu_button_box {
+    text-align: right;
+}
+
+.menu_button_box .select_option {
+    position: relative;
+    display: inline-block;
+}
+
+.menu_button_box .select_option select {
+    border: none;
+    background: transparent;
+    color: #092232;
+    text-transform: uppercase;
+}
+
+.menu_button_box .select_option select option {
+    border: none;
+    background: transparent;
+}
+
+.menu_button_box ul li {
+    display: inline-block;
+}
+
+.menu_button_box ul {
+    display: inline-block;
+}
+
+.menu_button_box ul li:before {
+    content: '|';
+    font-size: 16px;
+    color: #092232;
+    margin-right: 30px;
+}
+
+.menu_button_box ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.soemun_search_form {
+    position: absolute;
+    right: 25%;
+    top: 60px;
+    width: 250px;
+    background: #fff;
+    margin-top: -15px;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+    transition: all .5s;
+    box-shadow: 0 2px 12px #e1e1e1;
+    border-radius: 4px;
+}
+
+.soemun_search_form .form_control {
+    display: block;
+    width: 100%;
+    padding: 0 0 0 10px;
+    font-size: 14px;
+    line-height: 42px;
+    color: #222;
+    background-color: #e6e6e6;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.soemun_search_form .serach_btn {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    border: none;
+    color: #0088ff;
+    background: transparent;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.soemun_search_form .serach_btn i {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.soemun_search_form .serach_btn:focus {
+    outline: none;
+}
+
+/*
+	header_menu
+*/
+/*
+	End seomun_header area css
+*/
+
+
+/*
+	Start seomun_header section css
+*/
+
+.seomun_welcome_1 {
+    padding: 80px 0
+}
+
+.seomun_welcome {
+    position: relative;
+}
+
+.seomun_welcome_1 {
+    padding: 155px 0;
+}
+
+.seomun_welcome_1 #head_1 {
+    position: absolute;
+    right: -250px;
+    top: -250px;
+}
+
+.header_content_box span.seomun_span {
+    margin-bottom: 12px;
+}
+
+.header_content_box h2 {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 28px;
+}
+
+.header_content_box h5 {
+    margin-bottom: 4px;
+}
+
+.header_content_box .seomun_btn {
+    margin-right: 30px;
+}
+
+.bg {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 489px;
+    top: 691px;
+    width: 70px;
+    height: 70px;
+    z-index: 302;
+}
+
+.video_btn {
+    display: inline-block;
+    font-size: 16px;
+    color: #092232;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.video_btn span {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ef3b58;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 16px 32px 0px rgba(239, 59, 88, 0.2);
+    margin-right: 20px;
+}
+
+/*
+	End seomun_header section css
+*/
+
+/*
+	Start seomun_about section css
+*/
+.seomun_about2 {
+    padding: 52px 0 119px;
+}
+
+.about_2 {
+    padding: 110px 0 60px;
+}
+.about_home {
+    padding: 0px 0 80px;
+}
+
+.about_content_box span.seomun_span {
+    margin-bottom: 15px;
+}
+
+.about_content_box h2 {
+    font-size: 55px;
+    line-height: 65px;
+    margin-bottom: 18px;
+}
+
+.about_content_box h5 {
+    margin-bottom: 15px;
+}
+
+.about_img_box_2 img {
+    width: 100%;
+}
+
+/*
+	End seomun_about section css
+*/
+
+/* 
+	Start seomun_seo_features section css
+*/
+
+
+.seomun_seo_features {
+    padding: 73px 0 50px;
+}
+.seo_features_2{
+    padding: 115px 0 86px;
+}
+
+.seomun_skill_1 {
+    padding: 80px 0 95px;
+}
+
+.seomun_skill_2 {
+    padding: 70px 0 75px;
+}
+
+.seomun_skill_3 {
+    padding: 115px 0 80px;
+}
+.seo_text_1 h2 {
+    font-size: 68px;
+}
+
+.seo_features_box {
+    text-align: center;
+    background: #fff;
+    padding: 70px 60px;
+    margin-bottom: 30px;
+    border: 2px solid rgb(255, 243, 245);
+}
+
+.seo_features_box .seomun_icon {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    background: rgb(255, 243, 245);
+    font-size: 36px;
+    margin: auto auto 45px;
+}
+
+.seo_features_box .seomun_icon i {
+    font-size: 36px;
+    color: #ef3b58;
+}
+
+.seo_features_box .seomun_icon:after {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgb(239, 59, 88);
+    box-shadow: 0px 7px 14px 0px rgba(239, 59, 88, 0.6);
+}
+
+.seo_features_box .seomun_icon:before {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgb(239, 59, 88);
+    box-shadow: 0px 7px 14px 0px rgba(239, 59, 88, 0.6);
+    animation: ball 5s linear infinite;
+}
+.seo_features_box .seomun_info h3 {
+    margin-bottom: 30px;
+}
+
+/* 
+	End seomun_seo_features section css
+*/
+
+/*
+	Start seomun_skill section css
+*/
+
+/ .skill_content_box h2 span {
+    font-size: 45px;
+    line-height: 50px;
+}
+
+.skill_content_box h2 {
+    font-size: 55px;
+    line-height: 65px;
+    margin-bottom: 32px;
+}
+
+.seomun_counter_area_2 {
+    margin-top: 50px;
+}
+
+.skill_box .chart_2 {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skill_box .chart_2 canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill_box canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill_box .chart_2 .circle_info {
+    padding-top: 30px;
+}
+
+.skill_box h2 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 42px;
+}
+
+.skill_box h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skill_box_1 h2,
+.skill_box_1 h6 {
+    color: #ea3d56;
+}
+
+.skill_box_2 h2,
+.skill_box_2 h6 {
+    color: #3745a5;
+}
+
+.skill_box_3 h2,
+.skill_box_3 h6 {
+    color: #ff953f;
+}
+
+.skill_box_4 h2,
+.skill_box_4 h6 {
+    color: #56c4c5;
+}
+
+/*
+	End seomun_skill section css
+*/
+
+/*
+	Start seomun_works section css
+*/
+
+.seomun_works_2 .seomun_section_title {
+    margin-bottom: 67px;
+}
+
+.seomun_works {
+    margin-left: 160px;
+    padding: 112px 0 87px;
+}
+
+.works_container {
+    max-width: 1760px;
+}
+
+.works_content_box {
+    margin-bottom: 70px;
+}
+
+.works_content_box span.seomun_span {
+    margin-bottom: 21px;
+}
+
+.seomun_works_nav ul.nav-tabs {
+    border-bottom: none;
+    display: inline-flex;
+}
+
+.seomun_works_nav .works_nav_btn {
+    color: #788892;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.seomun_works_nav .works_nav_btn:hover,
+.seomun_works_nav .works_nav_btn:focus,
+.seomun_works_nav .works_nav_btn.active {
+    color: #ef3b58;
+}
+
+.work_box {
+    margin-bottom: 30px;
+}
+
+/*
+	End seomun_works section css
+*/
+
+/*
+	Start seomun_counter section csss
+*/
+.seomun_counter_1 {
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.counter_text.counter_box {
+    border: none;
+}
+
+.counter_text.counter_box h2 {
+    color: #ef3b58;
+}
+
+.counter_text.counter_box h2 span {
+    font-size: 60px;
+    color: #092232;
+    font-weight: 600;
+}
+
+.counter_text.counter_box h6 {
+    color: #999ea5;
+    text-transform: capitalize;
+}
+
+/*
+	End seomun_counter section csss
+*/
+
+/*
+	Start seomun_team section css
+*/
+
+.seomun_team_1 {
+    padding-top: 93px;
+    padding-bottom: 80px;
+}
+
+.team_2 {
+    padding-top: 112px;
+    padding-bottom: 150px;
+}
+
+.team_box.team_box_1 {
+    position: relative;
+}
+
+.team_box_1 .team_info {
+    text-align: center;
+    width: 80%;
+    overflow: hidden;
+    transition: all .5s;
+    padding: 29px;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    max-width: 100%;
+    bottom: -30px;
+    left: 35px;
+}
+
+.team_box_1 .team_info .team_info_content {
+    margin-top: 20px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.team_box_1:hover .team_info {
+    height: 275px;
+    box-shadow: 0px 16px 32px 0px rgba(158, 151, 255, 0.2);
+}
+
+.team_box_1:hover .team_info .team_info_content {
+    opacity: 1;
+}
+
+.team_box_1 .team_info p {
+    margin-bottom: 20px;
+}
+
+.team_info_content ul.social_link li {
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.team_info_content ul.social_link li a {
+    color: #aab4ba;
+    font-size: 14px;
+}
+
+/*
+	End seomun_team section css
+*/
+
+/*
+	Start seomun_service section css
+*/
+.seomun_service {
+    margin-top: 15px;
+    padding: 63px 0 80px;
+}
+.service_2 {
+    margin-top: 15px;
+    padding: 58px 0 120px;
+}
+
+
+.secomun_service_2 {
+    padding: 105px 0 60px;
+}
+.service_3{
+    padding: 63px 0 120px;
+}
+.service_text_box span.seomun_span {
+    margin-bottom: 0px;
+}
+
+.service_text_box h2 {
+    margin-bottom: 20px;
+}
+
+.seomun_content_box h5 {
+    font-family: 'Rubik';
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #4f6777;
+    margin-bottom: 25px;
+}
+
+.seomun_content_box p {
+    margin-bottom: 40px;
+}
+
+/*
+	End seomun_service section css
+*/
+
+/*
+	Start seomun_blog section css
+*/
+
+
+.seomun_blog {
+    padding: 74px 0 0;
+}
+.seomun_blog_2 {
+    padding: 103px 0;
+}
+.seomun_blog_3 {
+    padding: 115px 0 105px;
+}
+
+.blog_slide .blog_box {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.blog_slide .blog_box .post_meta ul li {
+    margin-right: 25px;
+}
+
+.blog_slide .slick-dots {
+    margin-top: 15px;
+    position: static;
+}
+
+.blog_slide .slick-dots li {
+    width: 30px;
+    height: 4px;
+    background: #caceff;
+    transition: all .5s;
+}
+
+.blog_slide .slick-dots li.slick-active {
+    background: #ef3b58;
+}
+
+/*
+	End seomun_blog section css
+*/
+
+/*
+	Start footer_widget section css
+*/
+.seomun_footer_1 {
+    position: relative;
+    z-index: 1;
+}
+
+.seomun_footer_1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/shape_5.png)no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.widget_area_1 {
+    padding: 140px 0 60px;
+}
+
+.seomun_footer_1 .seomun_copyright {
+    border-color: #e4dfff;
+}
+
+.seomun_footer_3 {
+    background-repeat: repeat;
+    position: relative;
+}
+
+.footer_title {
+    margin-bottom: 40px;
+}
+
+.widget_area.widget_area_3 {
+    padding: 100px 0;
+}
+
+.widget_area_3 .footer_title h4 {
+    color: #fff;
+}
+
+.footer_text {
+    margin-bottom: 40px;
+}
+
+.footer_info p i {
+    color: #ef3b58;
+}
+
+.post_single {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.post_single .post_icon {
+    float: left;
+}
+
+.post_single .post_icon i {
+    color: #ef3b58;
+}
+
+.post_info {
+    padding-left: 20px;
+}
+
+.post_info p a {
+    color: #97b1c2;
+}
+
+ul.widget_list li {
+    line-height: 40px;
+}
+
+ul.widget_list li a {
+    color: #97b1c2;
+}
+
+.seomun_copyright {
+    padding: 24px 0;
+    border-top: 2px solid #172f3e;
+}
+
+/*
+	End footer_widget section css
+*/
+
+/*==================================================
+		End	SEOMUN____Index_1.html
+====================================================*/
+
+
+/*==================================================
+	4.	Start SEOMUN____Index_2.html
+====================================================*/
+.yellow_color {
+    color: #ffa61b;
+}
+
+/* 
+	Start Seomun_header section css
+*/
+.header_container_2 {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.sidebar_icon {
+    text-align: right;
+}
+
+.sidebar_btn {
+    border: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    background-color: rgb(255, 166, 27);
+}
+
+.animate-menu-left {
+    z-index: 1;
+}
+
+.animate-menu {
+    width: 250px;
+    padding: 20px;
+    left: -250px;
+}
+
+.sidebar_logo {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.sidebar-menu li a {
+    text-transform: uppercase;
+}
+
+.sidebar-menu .sidebar-submenu > li > a {
+    padding: 10px;
+}
+
+/* 
+	End Seomun_header section css
+*/
+
+/*
+	Start seomun_welcome_2 section css
+*/
+.seomun_welcome_2 {
+    background-repeat: repeat;
+    position: relative;
+    padding: 210px 0;
+}
+
+.header_content_box_2 span.seomun_span {
+    color: #fff;
+}
+
+.header_content_box_2 span.seomun_span:before {
+    background: #fff;
+}
+
+.header_content_box_2 h2 {
+    color: #fff;
+}
+
+.header_content_box_2 h5 {
+    color: #fff;
+}
+
+.seomun_btn_2 {
+    display: inline-block;
+    padding: 29px 60px;
+    background: rgb(255, 166, 27);
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+.seomun_btn_2:hover,
+.seomun_btn_2:focus {
+    color: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(255, 166, 27, 0.2);
+}
+
+.header_content_box_2 .seomun_btn_2 {
+    margin-right: 30px;
+}
+
+.header_content_box_2 .video_btn span {
+    color: #ffa61b;
+    margin-right: 20px;
+}
+
+.header_content_box_2 .video_btn {
+    color: #fff;
+}
+
+/*
+	End seomun_welcome_2 section css
+*/
+
+/*
+	Start Seomun_Service section css
+*/
+.service_box_2 {
+    padding: 80px 40px;
+    background: rgb(255, 255, 255);
+    box-shadow: 2.778px 15.757px 38px 16px rgba(236, 234, 255, 0.3);
+}
+
+.service_box_2 .seomun_icon i {
+    color: #ffa61b;
+    font-size: 60px;
+}
+
+.service_box_2 .seomun_icon {
+    width: 125px;
+    height: 115px;
+    background: url(../images/icon_shape.png) no-repeat;
+    margin: 0 auto;
+    line-height: 155px;
+}
+
+.service_box_2 .seomun_info p {
+    margin-bottom: 30px;
+    color: #8c9da9;
+}
+
+.service_box_2 .seomun_info h3 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.service_box_2 .seomun_info a.link_btn {
+    color: #8c9da9;
+    font-size: 14px;
+}
+
+.service_box_2 .seomun_info a.link_btn:hover {
+    color: #ffa61b;
+}
+
+/*
+	End Seomun_Service section css
+*/
+
+/*
+	Start seomun_features_2 section css
+*/
+.seomun_features_2 {
+    padding: 105px 0 83px;
+}
+.seomun_features_3{
+    padding: 105px 0 120px;
+}
+.seomun_features.features{
+    padding: 100px 0 120px;
+}
+
+.feature_box_3 {
+    margin-bottom: 35px;
+}
+
+.feature_box_3 .seomun_icon i {
+    color: #ffa61b !important;
+}
+
+.feature_box_3 .seomun_info .feat_icon:hover {
+    background: rgb(255, 166, 27) !important;
+    box-shadow: 2.778px 15.757px 32px 0px rgba(255, 166, 27, 0.4) !important;
+}
+
+/*
+	End seomun_features_2 section css
+*/
+
+/*
+	Start faq section css
+*/
+.faq_right_box_2 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.faq_right_box_2 img {
+    position: relative !important;
+}
+
+.faq_accoridian_2 .card-body {
+    background: #ffa61b;
+}
+
+.faq_accoridian_2 .card .card-header h5 a i.fal {
+    color: #ffa61b !important;
+}
+
+/*
+	End faq section css
+*/
+
+/*
+	Start seomun_works section css
+*/
+.seomun_works_2 {
+    margin-left: 0;
+    padding: 102px 0 120px;
+}
+
+.work_button_2 {
+    margin-bottom: 40px;
+}
+
+.work_button_2 .work_btn {
+    border: none;
+    background: transparent;
+    color: #788892;
+    font-size: 16px;
+    color: #ffa61b;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #fff;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.work_button_2 .work_btn:hover,
+.work_button_2 .work_btn:focus,
+.work_button_2 .work_btn.active {
+    border-bottom: 2px solid #ffa61b;
+}
+
+/*
+	End seomun_works section css
+*/
+/*
+	Start seomun_blog section css
+*/
+.blog_box_2 .seomun_img_box img {
+    width: 100%;
+}
+
+.blog_box_2 .blog_content_box {
+    background: #0e293b;
+    padding: 40px;
+}
+
+.blog_box_2 .blog_content_box .post_meta {
+    padding: 0;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.blog_box_2 .blog_content_box .post_meta ul li a {
+    color: #97b1c2;
+}
+
+.blog_box_2 .blog_content_box .blog_info {
+    padding: 0;
+}
+
+.blog_box_2 .blog_content_box .blog_info h3 {
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 15px;
+}
+
+.blog_box_2 .blog_content_box .blog_info h3 a {
+    color: #fff;
+}
+
+/*
+	End seomun_blog section css
+*/
+/*
+	Start footer_widget section css
+*/
+.seomun_footer_2 {
+    position: relative;
+    background-repeat: repeat;
+    padding: 140px 0 125px
+}
+
+.seomun_footer_2 .seomun_copyright {
+    border: none;
+    padding: 0;
+}
+
+.seomun_footer_2 .seomun_copyright p {
+    margin: 50px 0;
+}
+
+ul.footer_social li {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+ul.footer_social li a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #97b1c2;
+    font-size: 14px;
+    background: rgb(9, 29, 41);
+    transition: all .5s;
+}
+
+ul.footer_social li a:hover,
+ul.footer_social li a:focus {
+    background-color: rgb(255, 166, 27);
+    box-shadow: 2.778px 15.757px 32px 0px rgba(255, 166, 27, 0.2);
+}
+
+/*
+	End footer_widget section css
+*/
+/*==================================================
+		End	SEOMUN____Index_2.html
+====================================================*/
+
+/*==================================================
+	5.	Start SEOMUN____About.html
+====================================================*/
+/*
+	Start seomun_breadcrumb section css
+*/
+.seomun_breadcrumb {
+    position: relative;
+    padding: 149px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.breadcrumb_title {
+    position: relative;
+}
+
+.breadcrumb_title h2 {
+    color: #fff;
+    font-size: 69px;
+    font-weight: 600;
+}
+
+.breadcrumb_title span {
+    color: #909ba3;
+    margin-bottom: 17px;
+}
+
+.breadcrumb_title span:before {
+    background: #909ba3;
+}
+
+.breadcrumb_link {
+    text-align: right;
+}
+
+.breadcrumb_link ul li {
+    display: inline-block;
+}
+
+.breadcrumb_link ul li:after {
+    display: inline-block;
+    content: '|';
+    font-size: 14px;
+    color: #7d92a0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.breadcrumb_link ul li:last-child:after {
+    display: none;
+}
+
+.breadcrumb_link ul li a {
+    color: #7d92a0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.breadcrumb_link ul li a.active {
+    color: #dedede;
+}
+
+/*
+	End seomun_breadcrumb section css
+*/
+.about_text_1 h2 {
+    margin-bottom: 14px;
+}
+
+.about_img_box {
+    position: relative;
+}
+
+.seomun_counter {
+    overflow: visible;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+.seomun_counter_2{
+    margin-bottom: 120px;
+}
+
+.smm{
+    margin-bottom: 120px;
+}
+
+
+
+.seomun_counter_area {
+    position: relative;
+    padding: 60px 0;
+    background: rgb(9, 34, 50);
+    box-shadow: 2.778px 15.757px 32px 0px rgba(164, 155, 255, 0.4);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow: visible;
+}
+
+.seomun_counter_area:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.counter_box {
+    text-align: center;
+}
+
+.counter_box .chart_1 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.counter_box .chart_1 canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.counter_box .circle_info {
+    position: absolute;
+    padding-left: 40px;
+    padding-top: 50px;
+}
+
+.counter_box h2 {
+    font-size: 14px;
+    line-height: 42px;
+}
+
+.counter_box h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.counter_box h2 span {
+    font-size: 46px;
+    font-weight: 300;
+}
+
+.counter_box_1 .circle_info h2,
+.counter_box_1 .circle_info h6 {
+    color: #00e1ef;
+}
+
+.counter_box_2 .circle_info h2,
+.counter_box_2 .circle_info h6 {
+    color: #ffa61b;
+}
+
+.counter_box_3 .circle_info h2,
+.counter_box_3 .circle_info h6 {
+    color: #ff1f27;
+}
+
+.counter_box_4 .circle_info h2,
+.counter_box_4 .circle_info h6 {
+    color: #f26c4f;
+}
+
+/*==================================================
+	End SEOMUN____About.html
+====================================================*/
+
+/*==================================================
+	6.	Start SEOMUN____SMM_service.html
+====================================================*/
+.facility{
+    padding: 115px 0 15px;
+}
+.facelity_content_box span.seomun_span {
+    margin-bottom: 7px;
+}
+
+.seomun_facelity_tab_area {
+    margin-bottom: 80px;
+}
+
+.facelity_feature_nav {
+    position: relative;
+    float: right;
+}
+
+.facelity_feature_nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.facelity_feature_nav input {
+    width: 390px;
+    height: 90px;
+    background: #ebe8fe;
+    border: 2px solid #e4e7ff;
+    border-radius: 50px;
+}
+
+.facelity_feature_nav ul li a.feature_tab_btn {
+    display: inline-block;
+    width: 180px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 50px;
+    color: #092232;
+    background: #fff;
+    margin-right: 10px;
+    transition: all .5s;
+}
+
+.facelity_feature_nav ul.nav-tabs li a.feature_tab_btn:hover,
+.facelity_feature_nav ul.nav-tabs li a.feature_tab_btn:focus,
+.facelity_feature_nav ul.nav-tabs li a.feature_tab_btn.active {
+    color: #fff;
+    background: #ef3b58;
+}
+
+.facelity_tab_content .tab_content_box span {
+    color: #092232;
+}
+
+.feature_content_tab .seomun_feature_nav {
+    margin-bottom: 0;
+}
+
+.feature_content_tab .seomun_feature_nav ul.nav-tabs li {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.feature_content_tab .seomun_feature_nav ul.nav-tabs li a.feature_nav_btn {
+    border-radius: 0;
+    border: none;
+    padding: 45px 55px;
+    background: #f7f6ff;
+}
+
+.feature_content_tab .seomun_feature_nav ul.nav-tabs li a.feature_nav_btn:hover,
+.feature_content_tab .seomun_feature_nav ul.nav-tabs li a.feature_nav_btn:focus,
+.feature_content_tab .seomun_feature_nav ul.nav-tabs li a.feature_nav_btn.active {
+    color: #7d8c95;
+    background: #fff;
+}
+
+.feature_content_tab .seomun_feature_nav ul li a span {
+    display: block;
+    color: #ef3b58;
+    font-size: 50px;
+    margin-bottom: 12px;
+}
+
+.tab_img_box {
+    background: #fafcff;
+}
+
+.feature_content_tab .tab-content {
+    background: #fff;
+    padding: 100px 60px;
+}
+
+.tab_content_box span {
+    color: #ef3b58;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.tab_content_box h2 {
+    font-size: 60px;
+    margin-bottom: 12px;
+}
+
+.work_slide .work_box {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.work_slide .slick-prev {
+    top: -46%;
+    left: 86%;
+}
+
+.work_slide .slick-next {
+    top: -46%;
+    right: 5%;
+}
+
+.work_slide .slick-prev:before {
+    content: '\f104';
+}
+
+.work_slide .slick-next:before {
+    content: '\f105';
+}
+
+.work_slide .slick-next:before,
+.work_slide .slick-prev:before {
+    display: block;
+    font-family: 'Font Awesome 5 Pro';
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    color: #010e2a;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.work_slide .slick-next:hover:before,
+.work_slide .slick-prev:hover:before,
+.work_slide .slick-next:focus:before,
+.work_slide .slick-prev:focus:before {
+    background: #ffa61b;
+    color: #fff;
+}
+
+/*==================================================
+	End SEOMUN____SMM_service.html
+====================================================*/
+
+/*==================================================
+	7.	Start SEOMUN____PPC_service.html
+====================================================*/
+
+
+.optimization_about{
+    padding: 112px 0 80px;
+}
+.optimization_text {
+    margin-bottom: 23px;
+}
+
+.optimization_text span.seomun_span {
+    margin-bottom: 4px;
+}
+
+.optimization_text h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.single_content_list {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.single_content_list .single_content_icon {
+    float: left;
+}
+
+.single_content_list .single_content_icon i {
+    font-size: 36px;
+    color: #ef3b58;
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 16px 32px 0px rgba(255, 163, 178, 0.2);
+}
+
+.single_content_list .single_content_info {
+    padding-left: 30px;
+}
+
+.single_content_list .single_content_info h4 {
+    margin-bottom: 30px;
+}
+
+.prcing_box {
+    background: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.pricing_top span {
+    display: block;
+    color: #ef3b58;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.pricing_top img {
+    margin-bottom: 60px;
+}
+
+.pricing_top h1 {
+    font-size: 50px;
+    color: #092232;
+}
+
+.pricing_top h1 span {
+    display: inline-block;
+    font-size: 14px;
+    color: #7d8c95;
+    margin-bottom: 0;
+}
+
+.pricing_body {
+    margin-bottom: 40px;
+}
+
+.pricing_body ul li {
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeaff;
+}
+
+.pricing_body ul li:last-child {
+    border-bottom: 0;
+}
+
+.pricing_button .pricing_btn {
+    color: #7d8c95;
+    background: #f0eeff;
+}
+
+.pricing_button .pricing_btn:hover {
+    background: #ee3a57;
+    color: #fff;
+}
+
+.seomun_pricing_plan .company_slide {
+    margin-top: 120px;
+}
+
+.seomun_video {
+    position: relative;
+}
+
+.video_play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video_play .play_btn {
+    display: block;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 16px 32px 0px rgba(238, 58, 87, 0.4);
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    color: #092232;
+    font-size: 16px;
+}
+
+.analytic_list ul li {
+    color: #092232;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.analytic_list ul li:before {
+    content: '';
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.analytic_list ul.ul_list_1 li:before {
+    background: rgb(255, 142, 29);
+    box-shadow: 0px 2px 4px 0px rgba(255, 142, 29, 0.4);
+}
+
+.analytic_list ul.ul_list_2 li:before {
+    background: rgb(238, 58, 87);
+    box-shadow: 0px 2px 4px 0px rgba(255, 142, 29, 0.4);
+}
+
+.analytic_list ul.ul_list_3 li:before {
+    background: rgb(8, 30, 44);
+    box-shadow: 0px 2px 4px 0px rgba(255, 142, 29, 0.4);
+}
+.seomun_video_analytics {
+    padding: 103px 0 111px;
+}
+/*==================================================
+	End SEOMUN____PPC_service_2.html
+====================================================*/
+
+/*==================================================
+	8.	Start SEOMUN____SEO_service_2.html
+====================================================*/
+.subscribe_bg{
+    padding: 115px 0 118px;
+}
+.seo_about_2 {
+    padding: 117px 0 58px;
+}
+.seo_text_1 h2 {
+    margin-bottom: 30px;
+}
+
+.overlay_title span {
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.overlay_title h2 {
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.seomun_subscribe_bg {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subscribe_form .form_control {
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+}
+
+.skills_right_2 .skills_img_box img {
+    box-shadow: none;
+    background: transparent;
+}
+
+/*==================================================
+	END SEOMUN____SEO_service.html
+====================================================*/
+
+/*==================================================
+	9.	Start SEOMUN____portfolio_grid.html
+====================================================*/
+.seomun_portfolio{
+    padding: 120px 0 55px;
+}
+.portfolio_box {
+    position: relative;
+    margin-bottom: 125px;
+}
+
+.portfolio_box .seomun_info {
+    position: absolute;
+    bottom: -60px;
+    left: 13px;
+    width: 335px;
+    height: 130px;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2.778px 15.757px 32px 0px rgba(188, 190, 255, 0.4);
+}
+
+.portfolio_box .seomun_info h4 {
+    margin-left: 55px;
+}
+
+.portfolio_box .seomun_info span.seomun_span:before {
+    top: 50px;
+    left: 40px;
+}
+
+/*==================================================
+	END SEOMUN____portfolio_grid.html
+====================================================*/
+
+/*==================================================
+	10.	Start SEOMUN____portfolio_masonary.html
+====================================================*/
+#portfolio {
+	padding-bottom: 90px;
+}
+.masonary_box {
+    margin-bottom: 30px;
+}
+
+/*==================================================
+	END SEOMUN____portfolio_masonary.html
+====================================================*/
+
+
+/*==================================================
+	11.	Start SEOMUN____single_portfolio.html
+====================================================*/
+.single_img_box {
+    margin-bottom: 30px;
+}
+
+.portfolio_text {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(235, 232, 255);
+}
+
+.portfolio_text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.portfolio_text p {
+    margin-bottom: 30px;
+}
+
+.content_discription_box {
+    padding: 40px 0;
+    border-bottom: 1px solid rgb(235, 232, 255);
+}
+
+.content_discription_box ul li {
+    line-height: 30px;
+}
+
+.content_share {
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+
+.content_share ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.content_discription_box ul li span,
+.content_share ul li span {
+    color: #092232;
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.content_share ul li a {
+    color: #7d8c95;
+}
+
+.content_share ul li a:hover {
+    color: #ef3b58;
+}
+
+/*==================================================
+	End SEOMUN____single_portfolio.html
+====================================================*/
+
+
+/*==================================================
+	12.	Start SEOMUN____single_shop.html
+====================================================*/
+.product_filter {
+    margin-bottom: 50px;
+}
+
+.grid_filter ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.grid_filter ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgb(249, 249, 255);
+    color: #788892;
+    font-size: 18px;
+    transition: all .5s;
+}
+
+.grid_filter ul li a:hover,
+.grid_filter ul li a:focus {
+    background: rgb(239, 59, 88);
+    color: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(239, 59, 88, 0.2);
+}
+
+.short_filer p {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.short_filer select {
+    padding: 0 20px;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #788892;
+}
+
+.short_filer select option {
+    font-size: 16px;
+    color: #788892;
+    text-transform: capitalize;
+    padding: 5px 0;
+}
+
+.product_search form {
+    position: relative;
+}
+
+.product_search input {
+    height: 50px;
+    width: 100%;
+    padding-left: 30px;
+    font-size: 16px;
+    color: #788892;
+    border-radius: 50px;
+    border: 1px solid #e5e5e5;
+}
+
+.product_search .search_btn {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    border: none;
+    font-size: 16px;
+    color: #788892;
+    background: transparent;
+}
+
+.product_box {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.product_box .seomun_info {
+    margin-top: 40px;
+}
+
+.price_tag {
+    margin-top: 20px;
+}
+
+.price_tag .price {
+    float: left;
+}
+
+.price_tag .price h6 {
+    color: #ef3b58;
+    font-weight: 400;
+}
+
+.price_tag .product_star {
+    float: right;
+}
+
+.product_star ul li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.product_star ul li a {
+    color: #ffba00;
+}
+
+/*
+	Start seomun_pagination css
+*/
+.seomun_pagination {
+    text-align: center;
+}
+
+.seomun_pagination ul li {
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.seomun_pagination ul li a {
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgb(248, 248, 248);
+    color: rgb(159, 167, 197);
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all .5s;
+}
+
+.seomun_pagination ul li a:hover {
+    background: rgb(239, 59, 88);
+    color: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(239, 59, 88, 0.4);
+}
+
+/*
+	End seomun_pagination css
+*/
+/*==================================================
+	End SEOMUN____single_shop.html
+====================================================*/
+
+/*==================================================
+	13.	Start SEOMUN____shop_details.html
+====================================================*/
+.shop_details {
+	padding: 120px 0 70px;
+}
+.product_details_area {
+    margin-bottom: 80px;
+}
+
+.product_img_box {
+    margin-bottom: 30px;
+}
+
+.product_img_box img,
+.product_thumb_img img {
+    width: 100%;
+}
+
+.product_content_box {
+    position: relative;
+}
+
+.product_content_box ul {
+    margin-bottom: 35px;
+}
+
+ul.rateing li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+ul.rateing li a {
+    color: #ffb400;
+}
+
+.product_content_box span.info_span {
+    color: #ef3b58;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.product_content_box h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.product_content_box h3 {
+    font-size: 50px;
+    font-weight: 300;
+    color: #ef3b58;
+    margin-bottom: 25px;
+}
+
+.product_content_box h3 span.price {
+    margin-left: 30px;
+    color: #bfc7d3;
+    text-decoration: line-through;
+}
+
+table.product_info td {
+    padding-left: 50px;
+}
+
+table.product_info tr {
+    line-height: 30px;
+}
+
+table.product_info td span {
+    color: #f46904;
+}
+
+.product_info_text {
+    margin-bottom: 40px;
+}
+
+.product_info_text h2 {
+    font-size: 30px;
+}
+
+.select_item .item_value {
+    margin-bottom: 30px;
+}
+
+.select_item .item_value input {
+    width: 60px !important;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+}
+
+.select_item .nice-number button {
+    width: 50px;
+    height: 52px;
+    border: 1px solid #ddd;
+    background: transparent;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.item_value a.value_icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 247, 241);
+    text-align: center;
+    color: #db8e93;
+    font-size: 14px;
+    margin-left: 20px;
+    transition: all .5s;
+}
+
+.item_value a.value_icon:hover {
+    color: #fff;
+    background-color: rgb(239, 59, 88);
+    box-shadow: 0px 16px 32px 0px rgba(239, 59, 88, 0.4);
+}
+
+.seomun_feature_nav {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.seomun_feature_nav:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #f0f0f0;
+    position: absolute;
+    bottom: 50%;
+    z-index: -1;
+}
+
+.seomun_feature_nav ul.nav-tabs {
+    text-align: center;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seomun_feature_nav ul.nav-tabs li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.seomun_feature_nav ul.nav-tabs li a.feature_nav_btn {
+    display: inline-block;
+    transition: all .5s;
+    border: 2px solid #f0f0f0;
+    padding: 20px 55px;
+    border-radius: 50px;
+    font-size: 12px;
+    background: #fff;
+    color: #7d8c95;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.seomun_feature_nav ul.nav-tabs li a.feature_nav_btn:hover,
+.seomun_feature_nav ul.nav-tabs li a.feature_nav_btn:focus,
+.seomun_feature_nav ul.nav-tabs li a.feature_nav_btn.active {
+    color: #fff;
+    background: #ef3b58;
+}
+
+.product_specifications,
+.product_discription_box,
+.discription_title {
+    margin-bottom: 40px;
+}
+
+.specifications_table {
+    width: 100%;
+}
+
+.specifications_table th {
+    width: 30%;
+    font-weight: 400;
+}
+
+.specifications_table tr {
+    line-height: 60px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.specifications_table tr:last-child {
+    border: none;
+}
+
+.product_discription_box p {
+    margin-bottom: 35px;
+}
+
+.product_discription_box .features_list {
+    margin-bottom: 45px;
+}
+
+.product_discription_box .features_list ul li:before {
+    margin-right: 7px;
+    content: '\f00c';
+    color: #f46904;
+    font-family: 'Font Awesome 5 Pro';
+}
+
+/*==================================================
+	End SEOMUN____shop_details.html
+====================================================*/
+
+/*==================================================
+	14.	Start SEOMUN____FAQ.html
+====================================================*/
+.seomun_faq {
+    padding: 120px 0 95px;
+}
+.seomun_faq2 {
+    padding: 115px 0 90px;
+}
+
+.faq_breadcrumb {
+    padding-bottom: 315px;
+}
+
+.seomun_faq_info {
+    margin-top: -170px;
+}
+
+.faq_info_box {
+    padding: 70px 60px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 16px 32px 0px rgba(139, 136, 255, 0.1);
+}
+
+.faq_info_box .seomun_icon i {
+    color: #ef3b58;
+    font-size: 60px;
+    margin-bottom: 33px;
+}
+
+.faq_info_box .seomun_info h3 {
+    margin-bottom: 15px;
+}
+
+.faq_info_box .seomun_info p {
+    color: #797e97;
+}
+
+.faq_content_box span.seomun_span {
+    margin-bottom: 14px;
+}
+
+.faq_content_box h2 span {
+    font-size: 45px;
+}
+
+.faq_content_box h2 {
+    font-size: 55px;
+    line-height: 65px;
+    margin-bottom: 33px;
+}
+
+.faq_accoridian .card {
+    margin-bottom: 30px;
+    border-radius: 0;
+    border: none;
+}
+
+.card-header {
+    background: #fff;
+    border: 1px solid #cdd3ff;
+    padding: 25px 40px;
+    border-radius: 0 !important;
+}
+
+.card-header h5 {
+    font-size: 16px;
+    color: #797e97;
+    padding-left: 60px;
+    cursor: pointer;
+}
+
+.card-body {
+    background: #ef3b58;
+    color: #fff;
+    font-size: 16px;
+}
+
+.faq_accoridian .card .card-header h5 a i.fal {
+    display: none;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    color: #ef3b58;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.faq_accoridian .card .card-header h5 a i.fal {
+    display: none;
+}
+
+.faq_accoridian .card .card-header h5 a[aria-expanded="true"] i.fal.fa-eye-slash {
+    display: block;
+}
+
+.faq_accoridian .card .card-header h5 a[aria-expanded="false"] i.fal.fa-eye {
+    display: block;
+}
+
+.faq_right_box {
+    position: relative;
+}
+
+.faq_right_box img {
+    position: absolute;
+}
+
+.faq_right_box img.faq_1 {
+    top: 30px;
+    left: 30px;
+}
+
+.faq_right_box img.faq_2 {
+    top: 20px;
+    right: 30px;
+}
+
+.faq_right_box img.faq_3 {
+    bottom: 30px;
+    left: 20px;
+}
+
+.faq_right_box img.faq_4 {
+    bottom: 15%;
+    right: -45%;
+}
+
+.features_box_2 {
+    background: #fff;
+    padding: 70px 60px;
+    transition: all .5s;
+}
+
+.features_box_2:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2.778px 15.757px 32px 0px rgba(153, 158, 255, 0.2);
+}
+
+.features_box_2 .seomun_icon i {
+    display: block;
+    color: #ef3b58;
+    font-size: 50px;
+    margin-bottom: 45px;
+}
+
+.features_box_2 .seomun_info h4 {
+    margin-bottom: 23px;
+}
+
+.features_box_2 .seomun_info p {
+    margin-bottom: 23px;
+}
+
+.features_box_2 .seomun_info a.feat_icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgb(255, 250, 242);
+    color: #7d8c95;
+    font-size: 14px;
+    transition: all .5s;
+}
+
+.features_box_2 .seomun_info a.feat_icon:hover {
+    color: #fff;
+    background-color: rgb(239, 59, 88);
+    box-shadow: 2.778px 15.757px 32px 0px rgba(239, 59, 88, 0.4);
+}
+
+/*==================================================
+	END SEOMUN____FAQ.html
+====================================================*/
+
+/*==================================================
+	15.	Start SEOMUN____TEAM.html
+====================================================*/
+
+.service_4{
+    padding: 105px 0 120px;
+}
+.seomun_team.seomun_team_2{
+    padding: 120px 0 95px;
+}
+.team_box.team_box_2 {
+    position: relative;
+    margin-bottom: 130px;
+}
+
+.team_img_box_2 {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.team_img_2 {
+    width: 80%;
+    float: left;
+}
+
+.team_social_2 {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.team_social_2 ul li {
+    margin-bottom: 25px;
+}
+
+.team_social_2 ul li a {
+    color: #c5ccd0;
+}
+
+.team_social_2 ul li a:hover {
+    color: #ef3b58;
+}
+
+.team_box_2 .team_info {
+    position: absolute;
+    transform: translate(10%, -15%);
+    width: 310px;
+    height: 130px;
+    padding: 40px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 16px 32px 0px rgba(221, 214, 255, 0.3);
+}
+
+.team_info h4 {
+    margin-bottom: 10px;
+}
+
+.team_info h6 {
+    color: #ef3b58;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.skill_text span.seomun_span {
+    margin-bottom: 6px;
+}
+
+.skill_text h2 {
+    font-size: 68px;
+    margin-bottom: 35px;
+}
+
+.single_skill_bar {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.project_percentenge {
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+.single_skill_bar h6 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.single_skill_bar .progress {
+    border-radius: 0;
+    height: 10px;
+    background: #e4e1ff;
+}
+
+.progress-bar {
+    background: #ef3b58;
+}
+
+.skills_img_box img {
+    background-color: rgb(247, 246, 255);
+    box-shadow: 0px 16px 32px 0px rgba(139, 136, 255, 0.4);
+}
+
+.sb_top {
+    margin-top: 40px;
+}
+
+.service_box_1 {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    box-shadow: 0px 16px 32px 0px rgba(158, 151, 255, 0.2);
+}
+
+.service_box_1 .seomun_icon {
+    margin-bottom: 40px;
+}
+
+.service_box_1 .seomun_icon i {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #ef3b58;
+    background: rgb(255, 242, 244);
+}
+
+.service_box_1 .seomun_info h5 {
+    margin-bottom: 17px;
+}
+
+/*==================================================
+	END SEOMUN____TEAM.html
+====================================================*/
+
+
+/*==================================================
+	16.	Start SEOMUN____Testimonial.html
+====================================================*/
+
+.testimonial_about{
+    padding: 115px 0 120px;
+}
+
+.seomun_company_slide_2 {
+    background: #ef3b58;
+}
+
+.company_icon img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.company_slide.slick-slider .slick-track,
+.company_slide.slick-slider .slick-list {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial_content_box h2 {
+    font-size: 65px;
+    line-height: 70px;
+}
+
+.testimonial_content_box {
+    margin-bottom: 75px;
+}
+
+.testimonial_content_box span.seomun_span {
+    margin-bottom: 10px;
+}
+
+.testimonial_box {
+    position: relative;
+    background: #f7f6ff;
+    padding: 60px 90px 120px;
+    z-index: 1;
+}
+
+.testimonial_box:after {
+    position: absolute;
+    content: '';
+    left: 30px;
+    top: 30px;
+    background: url(../images/qoute_2.png) no-repeat;
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+}
+
+.testimonial_review_box {
+    position: relative;
+    background: #fff;
+    text-align: center;
+    padding: 0px 50px 65px;
+    box-shadow: 2.778px 15.757px 32px 0px rgba(153, 142, 255, 0.2);
+    margin-top: 40px;
+}
+
+.review_text {
+    margin-top: 60px;
+}
+
+.client_img {
+    position: absolute;
+    top: -9%;
+    left: 43%;
+}
+
+.client_img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 2.778px 15.757px 32px 0px rgba(255, 166, 27, 0.2);
+}
+
+.review_text ul.rateing {
+    margin-bottom: 25px;
+}
+
+.review_text h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.review_text p {
+    margin-bottom: 30px;
+}
+
+.review_text h5 {
+    margin-bottom: 5px;
+}
+
+.review_text h6 {
+    font-size: 14px;
+    color: #ef3b58;
+}
+
+.testimonial_slide .slick-dots {
+    margin-top: 15px;
+    position: relative;
+}
+
+.testimonial_slide .slick-dots li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #caceff;
+    transition: all .5s;
+}
+
+.testimonial_slide .slick-dots li.slick-active {
+    background: #ef3b58;
+}
+
+.testimonil_input {
+    float: right;
+}
+
+.testimonil_input input {
+    border: none;
+    background: rgb(235, 233, 255);
+    width: 181px;
+    height: 90px;
+    border-radius: 50px;
+}
+
+.testimonial_slide .slick-prev {
+    top: -39%;
+    left: 111%;
+}
+
+.testimonial_slide .slick-next {
+    top: -39%;
+    right: -27%;
+}
+
+.testimonial_slide .slick-prev:before {
+    content: '\f104';
+}
+
+.testimonial_slide .slick-next:before {
+    content: '\f105';
+}
+
+.testimonial_slide .slick-next:before,
+.testimonial_slide .slick-prev:before {
+    display: block;
+    font-family: 'Font Awesome 5 Pro';
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    color: #010e2a;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.testimonial_slide .slick-next:hover:before,
+.testimonial_slide .slick-prev:hover:before,
+.testimonial_slide .slick-next:focus:before,
+.testimonial_slide .slick-prev:focus:before {
+    background: #ef3b58;
+    color: #fff;
+}
+
+/*==================================================
+	End SEOMUN____Testimonial.html
+====================================================*/
+
+/*==================================================
+	17.	Start SEOMUN____Blog_grid.html
+====================================================*/
+.blog_box {
+    margin-bottom: 40px;
+}
+
+.blog_box .seomun_info {
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.blog_box .seomun_info span {
+    display: block;
+    color: rgb(239, 59, 88);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.blog_box .seomun_info h3 {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.blog_box .seomun_info p {
+    margin-top: 30px;
+}
+
+.post_meta {
+    padding: 20px 0;
+    border-top: 1px solid rgb(225, 235, 255);
+    border-bottom: 1px solid rgb(225, 235, 255);
+}
+
+.post_meta ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.post_meta ul li span a {
+    color: #7d8c95;
+}
+
+.post_meta ul li span i {
+    margin-right: 7px;
+    font-size: 14px;
+}
+
+/*==================================================
+	END SEOMUN____Blog_grid.html
+====================================================*/
+
+
+/*==================================================
+	18.	Start SEOMUN____Blog_standard.html
+====================================================*/
+.sidebar_widget_box {
+    padding: 40px 25px;
+    border: 1px solid #e2edff;
+    margin-bottom: 40px;
+}
+
+.sidebar_widget_title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar_widget_title h3 {
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.sidebar_widget_title h3:after {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: 27px;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: rgb(235, 235, 235);
+}
+
+.sidebar_widget_title h3:before {
+    content: '';
+    position: absolute;
+    right: 27px;
+    top: 17px;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: rgb(235, 235, 235);
+}
+
+.search_widget form {
+    position: relative;
+}
+
+.search_widget input.form_control {
+    font-size: 12px;
+    background: #f9f7ff;
+    border: none;
+    border-radius: 30px;
+    color: #797e97;
+}
+
+.search_widget button.search_btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    border-radius: 50%;
+    color: #fff;
+    top: 0;
+    right: 0;
+    border: none;
+    background: #ef3b58;
+    transition: all .5s;
+}
+
+.search_widget button.search_btn:hover {
+    box-shadow: 0px 16px 32px 0px rgba(239, 59, 88, 0.4);
+}
+
+.ins_pa {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.insta_images {
+    margin-bottom: 16px;
+}
+
+.insta_images img {
+    width: 100%;
+}
+
+.social_widget {
+    text-align: center;
+}
+
+ul.social_widget_link li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+ul.social_widget_link li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    font-size: 16px;
+    color: #797e97;
+    transition: all .5s;
+}
+
+ul.social_widget_link li a:hover {
+    color: #fff;
+    background: rgb(239, 59, 88);
+    box-shadow: 0px 16px 32px 0px rgba(239, 59, 88, 0.4);
+}
+
+.categories_list li {
+    line-height: 24px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 16px;
+}
+
+.categories_list li a {
+    display: block;
+    padding-bottom: 16px;
+    color: #6870a0;
+}
+
+.categories_list li:last-child {
+    border-bottom: none;
+}
+
+.categories_list li a span {
+    float: right;
+}
+
+.feeds_single {
+    display: flex;
+    text-align: left;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.feeds_single .feeds_images {
+    float: left;
+}
+
+.feeds_single .feeds_img img {
+    width: 100%;
+}
+
+.feeds_single .feeds_info {
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.feeds_single .feeds_info h6 a {
+    display: block;
+    color: #170e2a;
+    margin-bottom: 5px;
+}
+
+.feeds_single .feeds_info p {
+    color: #6870a0;
+    font-size: 14px;
+}
+
+.feeds_single .feeds_info p i {
+    margin-right: 10px;
+}
+
+.tags_list {
+    text-align: left;
+}
+
+ul.tags_list li {
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 10px;
+}
+
+ul.tags_list li a {
+    display: block;
+    padding: 15px 20px;
+    border: 1px solid #eaeaea;
+    font-size: 14px;
+    color: #797e97;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.tag_btn_1 {
+    padding: 15px 30px !important;
+}
+
+.tag_btn_2 {
+    padding: 15px 25px !important;
+}
+
+.tag_btn_3 {
+    padding: 15px 16px !important;
+}
+
+/*==================================================
+	END   SEOMUN____Blog_standard.html
+====================================================*/
+
+/*==================================================
+	19.	Start SEOMUN____Blog_details.html
+====================================================*/
+.single_blog_content {
+    padding: 50px;
+    border: 1px solid #e2edff;
+}
+
+.single_content_box {
+    overflow: hidden;
+}
+
+.single_content_box .post_meta {
+    border: none;
+}
+
+.single_content_box h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+
+.single_content_box p {
+    margin-bottom: 20px;
+}
+
+.seomun_blockquote {
+    padding: 30px 60px 30px 45px;
+    display: flex;
+    margin-bottom: 45px;
+    margin-top: 45px;
+    overflow: hidden;
+}
+
+.qoute_icon {
+    float: left;
+    margin-top: 20px;
+}
+
+.qoute_text {
+    padding-left: 25px;
+}
+
+.content_share_area {
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.tags_area h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tags_area ul.tags_list li {
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.tags_area ul.tags_list li a {
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid #e5e5e5;
+}
+
+.tags_area ul.social_link_2 li {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.tags_area ul.social_link_2 li a {
+    font-size: 18px;
+    color: #9498b6;
+}
+
+.prev_next_area {
+    padding: 45px 0;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.prev_next_text a {
+    color: #7886a0;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.releted_post_title h4,
+.comment_title h4,
+.post_title h4 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #170e2a;
+}
+
+.icon_box {
+    text-align: center;
+}
+
+.releted_post {
+    margin-bottom: 110px;
+}
+
+.blog_img img {
+    width: 100%;
+}
+
+.blog_details {
+    padding: 40px;
+    border: 1px solid #f4f3fb;
+    border-top: none;
+}
+
+.blog_details h4 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #170e2a;
+    margin-bottom: 16px;
+}
+
+.blog_details p {
+    font-size: 14px;
+}
+
+.blog_admin {
+    position: relative;
+    margin-top: 110px;
+}
+
+.about_admin_area {
+    background: #f3f1ff;
+    padding: 50px;
+    position: relative;
+}
+
+.admin_images {
+    position: absolute;
+    top: -60px;
+    left: 44%;
+    text-align: center;
+}
+
+.admin_images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    background-color: rgb(209, 209, 209);
+}
+
+.admin_bio {
+    margin-top: 40px;
+}
+
+.admin_bio h4 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #170e2a;
+    margin-bottom: 10px;
+}
+
+.admin_bio ul.social_link_2 {
+    margin-bottom: 20px;
+}
+
+ul.social_link_2 li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul.social_link_2 li a {
+    font-size: 12px;
+    color: #9498b6;
+}
+
+ul.social_link_2 li a:hover {
+    color: #ff4a57;
+}
+
+.admin_bio p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.comment_area {
+    margin-top: 50px;
+}
+
+.comment_title,
+.post_title {
+    margin-bottom: 40px;
+}
+
+.comment_list_area {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.comment_list_area .single_comment {
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.comment_list_area .single_comment .comment_images {
+    float: left;
+}
+
+.comment_list_area .single_comment .comment_images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.comment_list_area .single_comment .comment_text {
+    margin-left: 30px;
+}
+
+.comment_list_area .single_comment .comment_text h5 {
+    color: #170e2a;
+    margin-bottom: 10px;
+}
+
+.comment_list_area .single_comment .comment_text h5 i {
+    color: #cacfef;
+    font-size: 12px;
+}
+
+.comment_list_area .single_comment .comment_text h6 {
+    color: #ff9d60;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.comment_list_area .single_comment .comment_text p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.comment_list_area .single_comment .comment_text h5 i {
+    margin-left: 25px;
+}
+
+.comment_list_area .single_comment .comment_text h5 span {
+    float: right;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.comment_list_area .single_comment .comment_text h5 span a {
+    color: #7886a0;
+}
+
+.comment_list_area .single_comment .comment_text h5 span a i {
+    margin-right: 4px;
+    color: #7886a0;
+}
+
+.post_form {
+    background: #f8f6ff;
+    padding: 50px;
+}
+
+.post_form .form_list {
+    position: relative;
+}
+
+.post_form .form_list .form_control {
+    border: none;
+}
+
+.post_form .form_list textarea {
+    border: none;
+    height: 150px;
+    margin-bottom: 25px;
+    padding: 23px 30px;
+}
+
+.post_form .form_list i {
+    position: absolute;
+    right: 30px;
+    top: 23px;
+    color: #ef3b58;
+    font-size: 14px;
+}
+
+/*==================================================
+	End SEOMUN____Blog_details.html
+====================================================*/
+
+/*==================================================
+	19.	Start SEOMUN____Contact.html
+====================================================*/
+.contact_info_box {
+    background: #092232;
+    padding: 70px 60px 70px 70px;
+}
+
+.contact_info_box .info_title span {
+    font-size: 14px;
+    color: #a0afb9;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact_info_box .info_title h2 {
+    color: #fff;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.info_single_box {
+    margin-top: 40px;
+    display: flex;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(18, 48, 67);
+}
+
+.info_single_box:last-child {
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+.info_single_box .info_icon {
+    float: left;
+}
+
+.info_single_box .info_icon i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgb(218, 41, 70);
+    color: #fff;
+    font-size: 14px;
+}
+
+.info_single_box .info_text {
+    padding-left: 20px;
+}
+
+.info_single_box .info_text h5 {
+    color: #fff;
+    margin-bottom: 17px;
+}
+
+.info_text p {
+    color: #a0afb9;
+    line-height: 34px;
+}
+
+.info_text p i {
+    margin-right: 10px;
+}
+
+.info_text p a {
+    color: #a0afb9;
+}
+
+.form_control {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(224, 228, 255);
+    margin-bottom: 30px;
+    padding-left: 30px;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #95a9b5;
+}
+
+textarea.form_control {
+    padding-top: 20px;
+    height: 170px;
+    font-size: 14px;
+    color: #95a9b5;
+}
+
+.contact_map_area iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+
+.form_title {
+    margin-bottom: 60px;
+}
+
+/*==================================================
+	End SEOMUN____Contact.html
+====================================================*/
+
+
+/*==================================================
+	21.	Start SEOMUN___Index.html
+====================================================*/
+.index_header.sticky {
+    position: fixed;
+    top: 0;
+    background: #7713cf;
+    padding: 20px 0;
+}
+
+.index_logo,
+.index_menu,
+.index_button {
+    position: relative;
+}
+
+.index_header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 40px;
+    z-index: 337;
+}
+
+.index_menu {
+    text-align: center;
+}
+
+.index_menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.index_menu ul li a {
+    display: inline-block;
+    padding: 15px 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.index_button {
+    text-align: right;
+}
+
+.index_button .seomun_btn_2 {
+    padding: 15px 40px;
+}
+
+.demo_bg {
+    background: url(../images/demo/index_bg.png) repeat;
+    position: relative;
+    padding: 200px 0;
+}
+
+.demo_bg_text span {
+    display: block;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.demo_bg_text h2 {
+    font-size: 46px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.demo_title {
+    margin-bottom: 55px;
+}
+
+.demo_title span {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #7713cf;
+}
+
+.demo_title h2 {
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.demo_area {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 60px;
+}
+
+.demo_area:hover .demo_overlay {
+    visibility: visible;
+    opacity: .9;
+}
+
+.demo_area:hover .demo_button {
+    visibility: visible;
+    opacity: 1;
+}
+
+.demo_single {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.demo_single img {
+    width: 100%;
+    height: 100%;
+}
+
+.demo_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #092f5d;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.demo_button {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.demo_btn {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #ef3b58;
+    transition: all .5s;
+}
+
+.demo_btn:hover,
+.demo_btn:focus {
+    color: #fff;
+}
+
+.inner_slide .slick-prev {
+    top: 95%;
+    left: 45%;
+    z-index: 1;
+}
+
+.inner_slide .slick-next {
+    top: 95%;
+    right: 45%;
+}
+
+.inner_slide .slick-prev:before {
+    content: '\f104';
+}
+
+.inner_slide .slick-next:before {
+    content: '\f105';
+}
+
+.inner_slide .slick-next:before,
+.inner_slide .slick-prev:before {
+    display: block;
+    font-family: 'Font Awesome 5 Pro';
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background: #ef3b58;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.inner_slide .slick-next:hover:before,
+.inner_slide .slick-prev:hover:before,
+.inner_slide .slick-next:focus:before,
+.inner_slide .slick-prev:focus:before {
+    background: #ef3b58;
+    color: #fff;
+}
+
+.feature_intro {
+    background-repeat: repeat;
+    padding: 180px 0;
+    margin-bottom: 60px;
+}
+
+.feature_intro_text h2 {
+    color: #fff;
+}
+
+.template_feature_box {
+    padding: 20px;
+    background: #f0ecf4;
+    margin-bottom: 40px;
+    transition: all .5s;
+}
+
+.template_feature_box:hover {
+    background: #7713cf;
+}
+
+.template_feature_box:hover .template_icon h5 {
+    color: #fff;
+}
+
+.template_icon img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.template_icon h5 {
+    color: #353849;
+}
+
+.demo_footer {
+    background-repeat: repeat;
+    padding: 50px 0 40px;
+}
+
+.demo_footer_text p {
+    color: #fff;
+}
+
+/*==================================================
+	END SEOMUN___Index.html
+====================================================*/

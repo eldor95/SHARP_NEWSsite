@@ -1,0 +1,27 @@
+<div class="pt-3 pb-3 pl-3">
+    <h4>Kategoriyani tahrirlash</h4>
+</div>
+
+
+<div class="row">
+    <div class="col-md-10 mt-3">
+        <form method="POST" action="<%=`/user/${result._id}?_method=PUT`%>" class="col-md-8">
+            <div class="mb-3">
+                <label>Foydalanuvchi nomini kiriting </label>
+                <input type="text" class="form-control" value="<%= result.name %>" name="name" />
+            </div>
+
+            <div class="mb-3">
+                <label>Foydalanuvchi emailini kiriting </label>
+                <input type="email" class="form-control" value="<%= result.email %>" name="email" />
+            </div>
+
+            <div class="mb-3">
+                <label>Foydalanuvchi passwordini kiriting </label>
+                <input type="password" class="form-control" name="password" />
+            </div>
+
+            <button type="submit" class="btn btn-primary col-md-5 mt-3">Saqlash</button>
+        </form>
+    </div>
+</div>

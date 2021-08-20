@@ -1,0 +1,42 @@
+<section class="seomun_breadcrumb" style="background-image: url(assets/images/breadcrumb_bg.jpg);">
+    <div class="seomun_overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="breadcrumb_title">
+                    <h2>Izlab topilgan yangiliklar</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End seomun_breadcrumb section -->
+<!-- Start seomun_blog_grid section -->
+<section class="seomun_blog_grid blog_grid section_padding">
+    <div class="container">
+        <div class="row">
+
+            <% for (let item of result) {%>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="seomun_box blog_box">
+                        <div class="seomun_img_box">
+                            <img src="/convert/<%= item.image %>" class="img-fluid" alt="">
+                        </div>
+                        <div class="seomun_info blog_info">
+                            <span class="tag"><%= item.category_ID.name  %> </span>
+                            <h3>
+                                <a href="/get_news/<%= item._id %> ">
+                                    <%= item.title  %>
+                                </a>
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+                <% } %>
+
+        </div>
+
+    </div>
+</section>
+<!-- End seomun_blog_grid section -->

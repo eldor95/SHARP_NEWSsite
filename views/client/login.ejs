@@ -1,0 +1,69 @@
+<section class="seomun_breadcrumb" style="background-image: url(assets/images/breadcrumb_bg.jpg);">
+    <div class="seomun_overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="breadcrumb_title">
+                    <h2>Login page</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="breadcrumb_link">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a class="active" href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="col-md-6 offset-3 mt-5" style="display: flex; flex-direction: column;">
+    <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="password">
+        </div>
+    </div>
+    <button class="btn btn-success" id="sendContact">Ro'yhatdan o'tish</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script>
+    const sendContact = document.getElementById('sendContact');
+    sendContact.addEventListener("click", () => {
+        const email = document.getElementById('email')
+        const password = document.getElementById('password')
+        if (email.value == "" && password.value == "") {
+            alert("Malumotni toldiring")
+        } else {
+
+            axios({
+                    url: "/user/login_website",
+                    method: "POST",
+                    data: {
+                        email: email.value,
+                        password: password.value,
+                    }
+                })
+                .then(res => {
+                    location.reload()
+                        // console.log(res.data)
+                })
+                .catch((error) => {
+                    alert("Avtorizatsiyda xatolik bor")
+                })
+
+        }
+    })
+</script>

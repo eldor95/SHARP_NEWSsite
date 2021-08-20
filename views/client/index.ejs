@@ -1,0 +1,490 @@
+<section class="seomun_welcome seomun_welcome_1">
+    <svg id="head_1" width="1243px" height="1165px">
+        <path fill-rule="evenodd"  fill="rgb(248, 251, 255)" d="M1079.000,899.999 C1079.000,899.999 809.000,1267.999 651.000,1135.999 C493.000,1004.000 361.000,1023.999 263.000,1045.999 C165.000,1067.999 -81.000,979.999 27.000,785.999 C135.000,591.999 213.000,411.999 525.000,384.000 C837.000,355.999 961.000,323.999 913.000,172.001 C865.000,20.001 579.000,102.001 519.000,100.001 C459.000,98.001 989.000,0.000 989.000,0.000 L1243.000,582.000 L1079.000,899.999 Z"/>
+    </svg>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="header_content_box seomun_content_box wow fadeInLeft" data-wow-delay=".3s">
+                    <span class="seomun_span"> New about All category</span>
+                    <h2><br>
+                        <%=news[0].title%>
+                    </h2>
+                    <h5>
+                        <%=news[0].description%>
+                    </h5>
+                    <a href="#" class="seomun_btn">Learn more</a>
+                    <a href="https://www.youtube.com/watch?v=3AtDnEC4zak" class="video_btn"><span><i class="fas fa-play"></i></span>intro video</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="header_img_box wow fadeInRight" data-wow-delay=".5s">
+                    <img src="/convert/<%=news[0].image%>" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End seomun_header section -->
+<!-- Start seomun_about section -->
+<section class="seomun_about about_home">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="seomun_img_box about_img_box about_img_box_2">
+                    <img src="/convert/<%=news[0].image%>" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="seomun_content_box about_content_box">
+                    <span class="seomun_span">our approch</span>
+                    <h2><span>We Are Here For </span><br>Make Best Product</h2>
+                    <h5>We help you managing asset, provide financial advise. Leave money issue with us and focus on your core business.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident for your happiness.</p>
+                    <a href="#" class="seomun_btn">our services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End seomun_about section -->
+<!-- Start seomun_seo_features section -->
+<section class="seomun_seo_features seo_features section_padding_2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="seomun_section_title text-center">
+                    <h2>
+                        Category Type
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <% for(let item of categories){ %>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="seomun_box seo_features_box wow fadeInUp" data-wow-delay=".3s">
+                        <div class="seomun_icon">
+                            <i class="fas fa-dice-d10"></i>
+                        </div>
+                        <div class="seomun_info">
+                            <h3>
+                                <%=item.name %>
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt emit.</p>
+                        </div>
+                    </div>
+
+                    <!-- </div>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="seomun_box seo_features_box wow fadeInUp" data-wow-delay=".5s">
+                    <div class="seomun_icon">
+                        <i class="fas fa-dice-d12"></i>
+                    </div>
+                    <div class="seomun_info">
+                        <h3>Data Analytics</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt emit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="seomun_box seo_features_box wow fadeInUp" data-wow-delay=".7s">
+                    <div class="seomun_icon">
+                        <i class="fal fa-dice-d20"></i>
+                    </div>
+                    <div class="seomun_info">
+                        <h3>Data Analytics</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt emit.</p>
+                    </div>
+                </div>
+            </div> -->
+                </div>
+                <% } %>
+        </div>
+</section>
+<!-- End seomun_seo_features section -->
+<!-- Start seomun_skill section -->
+<section class="seomun_skill seomun_skill_1 section_padding_2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="seomun_content_box skill_content_box">
+                    <span class="seomun_span">our skills</span>
+                    <h2><span>Social Media Allows Big</span><br>Thing To Act Small.</h2>
+                    <h5>We help you managing asset, provide financial advise. Leave money issue with us and focus on your core business.</h5>
+                </div>
+                <!-- Start seomun_counter section -->
+                <div class="seomun_counter_area_2">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="skill_box skill_box_1">
+                                <div class="chart_2" data-percent="70" data-bar-color="#ea3d56">
+                                    <div class="circle_info">
+                                        <h2><span class="counter">72</span>%</h2>
+                                        <h6>marketing</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="skill_box skill_box_2">
+                                <div class="chart_2" data-percent="70" data-bar-color="#404da9">
+                                    <div class="circle_info">
+                                        <h2><span class="counter">47</span>%</h2>
+                                        <h6>planing</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="skill_box skill_box_3">
+                                <div class="chart_2" data-percent="90" data-bar-color="#ff9a47">
+                                    <div class="circle_info">
+                                        <h2><span class="counter">76</span>%</h2>
+                                        <h6>sketch</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="skill_box skill_box_4">
+                                <div class="chart_2" data-percent="53" data-bar-color="#56c4c5">
+                                    <div class="circle_info">
+                                        <h2><span class="counter">39</span>%</h2>
+                                        <h6>analytics</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="seomun_img_box skill_img_box wow fadeInRight">
+                    <img src="assets/images/skill_right_3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End seomun_skill section -->
+<!-- Start seomun_works section -->
+<section class="seomun_works seomun_works_1 section_padding_2" id="seomun_works">
+    <div class="container works_container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="seomun_content_box works_content_box">
+                    <span class="seomun_span">Case Study</span>
+                    <h2><span>Here Is Our Some</span><br>Awesome Works</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="seomun_works_nav text-center">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#all" class="works_nav_btn active" data-toggle="tab">All Projects</a>
+                        </li>
+                        <li>
+                            <a href="#ui" class="works_nav_btn" data-toggle="tab">UI/UX</a>
+                        </li>
+                        <li>
+                            <a href="#brand" class="works_nav_btn" data-toggle="tab">Branding</a>
+                        </li>
+                        <li>
+                            <a href="#Web" class="works_nav_btn" data-toggle="tab">Web Design</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="work_tab_content tab-content">
+            <div class="tab-pane fadeIn animated" id="all">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="seomun_box work_box">
+                            <div class="seomun_img">
+                                <img src="assets/images/work_1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="seomun_box work_box">
+                            <div class="seomun_img">
+                                <img src="assets/images/work_2.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="seomun_box work_box">
+                            <div class="seomun_img">
+                                <img src="assets/images/work_1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane active fadeIn animated" id="ui">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="seomun_box work_box">
+                            <div class="seomun_img">
+                                <img src="assets/images/work_1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="seomun_box work_box">
+                            <div class="seomun_img">
+                                <img src="/assets/images/work_2.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="seomun_box work_box">
+                            <div class="seomun_img">
+                                <img src="/assets/images/work_1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fadeIn animated" id="brand">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="seomun_box work_box">
+                            <div class="seomun_img">
+                                <img src="/assets/images/work_1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="seomun_box work_box">
+                            <div class="seomun_img">
+                                <img src="/assets/images/work_2.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="seomun_box work_box">
+                            <div class="seomun_img">
+                                <img src="/assets/images/work_1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fadeIn animated" id="Web">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="seomun_box work_box">
+                            <div class="seomun_img">
+                                <img src="/assets/images/work_1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="seomun_box work_box">
+                            <div class="seomun_img">
+                                <img src="/assets/images/work_2.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="seomun_box work_box">
+                            <div class="seomun_img">
+                                <img src="/assets/images/work_1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End seomun_works section -->
+<!-- Start seomun_counter section -->
+<section class="seomun_counter seomun_counter_1 section_padding" style="background: url(assets/images/counter_bg.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="counter_box counter_text">
+                    <h2><span class="counter">234</span>+</h2>
+                    <h6>Users</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="counter_box counter_text">
+                    <h2><span class="counter">345</span>+</h2>
+                    <h6>projects</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="counter_box counter_text">
+                    <h2><span class="counter">765</span>+</h2>
+                    <h6>awards</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="counter_box counter_text">
+                    <h2><span class="counter">862</span>+</h2>
+                    <h6>coffee</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End seomun_counter section -->
+<!-- Start seomun_team section -->
+
+<!-- End seomun_team section -->
+<!-- Start seomun_service section -->
+<section class="seomun_service service_1 section_padding_2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="service_box_area">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-6 col-sm-8">
+                            <div class="seomun_box service_box_1 wow fadeInUp" data-wow-delay=".2s">
+                                <div class="seomun_icon">
+                                    <i class="far fa-bullhorn"></i>
+                                </div>
+                                <div class="seomun_info">
+                                    <h5>Digital Marketing</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elised do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-8">
+                            <div class="seomun_box service_box_1 sb_top wow fadeInUp" data-wow-delay=".3s">
+                                <div class="seomun_icon">
+                                    <i class="fal fa-bullseye-arrow"></i>
+                                </div>
+                                <div class="seomun_info">
+                                    <h5>Seo Ranking</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elised do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-8">
+                            <div class="seomun_box service_box_1 wow fadeInUp" data-wow-delay=".5s">
+                                <div class="seomun_icon">
+                                    <i class="fal fa-chart-network"></i>
+                                </div>
+                                <div class="seomun_info">
+                                    <h5>Black Hat SEO</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elised do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-8">
+                            <div class="seomun_box service_box_1 sb_top wow fadeInUp" data-wow-delay=".7s">
+                                <div class="seomun_icon">
+                                    <i class="fal fa-cog"></i>
+                                </div>
+                                <div class="seomun_info">
+                                    <h5>Offline SEO</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elised do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="service_right_area">
+                    <div class="service_text_box seomun_content_box">
+                        <span class="seomun_span">skills</span>
+                        <h2><span>Actually......</span><br>what we do.</h2>
+                        <h5>We help you managing asset, provide financial advise. Leave money issue with us and focus on your core business.</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla mco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehende rit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident for your happiness.</p>
+                    </div>
+                    <div class="seomun_button_box">
+                        <a href="#" class="seomun_btn">get a quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End seomun_service section -->
+<!-- Start seomun_blog section -->
+<section class="seomun_blog seomun_blog_1 section_padding_2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="seomun_section_title text-center">
+                    <span>Blog</span>
+                    <h2>News Feeds</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+            </div>
+        </div>
+        <div class="blog_slide">
+            <div class="seomun_box blog_box">
+                <div class="seomun_img_box">
+                    <img src="/client/assets/images/blog_17.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="seomun_info blog_info">
+                    <span class="tag">Marketing</span>
+                    <h3><a href="#">Sed do eiusmod tempor incididunt ut labore et dolore.</a></h3>
+                </div>
+                <div class="post_meta">
+                    <ul>
+                        <li><span><i class="far fa-comments"></i></span><a href="#">33 Comments</a></li>
+                        <li><span><i class="far fa-user"></i> by </span><a href="#">Rosalina D Williamson</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="seomun_box blog_box">
+                <div class="seomun_img_box">
+                    <img src="/client/assets/images/blog_18.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="seomun_info blog_info">
+                    <span class="tag">agency</span>
+                    <h3><a href="#">Sed do eiusmod tempor incididunt ut labore et dolore.</a></h3>
+                </div>
+                <div class="post_meta">
+                    <ul>
+                        <li><span><i class="far fa-comments"></i></span><a href="#">33 Comments</a></li>
+                        <li><span><i class="far fa-user"></i> by </span><a href="#">Rosalina D Williamson</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="seomun_box blog_box">
+                <div class="seomun_img_box">
+                    <img src="/client/assets/images/blog_19.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="seomun_info blog_info">
+                    <span class="tag">seo</span>
+                    <h3><a href="#">Sed do eiusmod tempor incididunt ut labore et dolore.</a></h3>
+                </div>
+                <div class="post_meta">
+                    <ul>
+                        <li><span><i class="far fa-comments"></i></span><a href="#">33 Comments</a></li>
+                        <li><span><i class="far fa-user"></i> by </span><a href="#">Rosalina D Williamson</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="seomun_box blog_box">
+                <div class="seomun_img_box">
+                    <img src="/client/assets/images/blog_17.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="seomun_info blog_info">
+                    <span class="tag">Marketing</span>
+                    <h3><a href="#">Sed do eiusmod tempor incididunt ut labore et dolore.</a></h3>
+                </div>
+                <div class="post_meta">
+                    <ul>
+                        <li><span><i class="far fa-comments"></i></span><a href="#">33 Comments</a></li>
+                        <li><span><i class="far fa-user"></i> by </span><a href="#">Rosalina D Williamson</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End seomun_blog section -->

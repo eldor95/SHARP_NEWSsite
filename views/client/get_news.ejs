@@ -1,0 +1,432 @@
+<style>
+    .avatar {
+        position: relative;
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.25rem;
+    }
+    
+    .avatar-img,
+    .avatar-initials,
+    .avatar-placeholder {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+    
+    .avatar-img {
+        display: block;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    
+    .avatar-initials {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #fff;
+        line-height: 0;
+        background-color: #a0aec0;
+    }
+    
+    .avatar-placeholder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #a0aec0 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='%23fff' d='M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z'/%3e%3c/svg%3e") no-repeat center/1.75rem;
+    }
+    
+    .avatar-indicator {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 20%;
+        height: 20%;
+        display: block;
+        background-color: #a0aec0;
+        border-radius: 50%;
+    }
+    
+    .avatar-group {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+    }
+    
+    .avatar-group .avatar+.avatar {
+        margin-left: -0.75rem;
+    }
+    
+    .avatar-group .avatar:hover {
+        z-index: 1;
+    }
+    
+    .avatar-sm,
+    .avatar-group-sm>.avatar {
+        width: 2.125rem;
+        height: 2.125rem;
+        font-size: 1rem;
+    }
+    
+    .avatar-sm .avatar-placeholder,
+    .avatar-group-sm>.avatar .avatar-placeholder {
+        background-size: 1.25rem;
+    }
+    
+    .avatar-group-sm>.avatar+.avatar {
+        margin-left: -0.53125rem;
+    }
+    
+    .avatar-lg,
+    .avatar-group-lg>.avatar {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+    
+    .avatar-lg .avatar-placeholder,
+    .avatar-group-lg>.avatar .avatar-placeholder {
+        background-size: 2.25rem;
+    }
+    
+    .avatar-group-lg>.avatar+.avatar {
+        margin-left: -1rem;
+    }
+    
+    .avatar-light .avatar-indicator {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75);
+    }
+    
+    .avatar-group-light>.avatar {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75);
+    }
+    
+    .avatar-dark .avatar-indicator {
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+    }
+    
+    .avatar-group-dark>.avatar {
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+    }
+    /* Font not working in <textarea> for this version of bs */
+    
+    textarea {
+        font-family: inherit;
+    }
+</style>
+<section class="seomun_breadcrumb" style="background-image: url(assets/images/breadcrumb_bg.jpg);">
+    <div class="seomun_overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="breadcrumb_title">
+                    <span class="seomun_span">Digital agency</span>
+                    <h2>News List</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="breadcrumb_link">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End seomun_breadcrumb section -->
+<!-- Start blog_standard section  -->
+<section class="blog_standard seomun_blog_standard section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="blog_standard_main">
+                    <div class="row">
+
+
+                        <div class="col-lg-12">
+                            <div class="seomun_box blog_box">
+                                <div class="seomun_img_box">
+                                    <img src="/convert/<%= news.image %>" class="img-fluid" alt="">
+                                </div>
+                                <div class="seomun_info blog_info">
+                                    <span class="tag"><%= news.category_ID.name %></span>
+                                    <h3>
+                                        <a href="#">
+                                            <%= news.title %>
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        <%= news.description %>
+                                    </p>
+                                </div>
+                                <div class="post_meta">
+                                    <ul>
+                                        <li><span><i class="far fa-eye"></i></span>
+                                            <a href="#">
+                                                <%= news.counter %>
+                                            </a>
+                                        </li>
+                                        <li><span><i class="far fa-comments"></i></span><a href="#">33 Comments</a></li>
+                                        <li><span><i class="far fa-user"></i> by</span> <a href="#">Rosalina D Williamson</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <% if(client) {%>
+                            <div class="col-lg-12" style="display: flex; flex-direction: column;">
+                                <div class="mb-3">
+                                    <input type="hidden" class="form-control" id="news_ID" value="<%= news._id  %>">
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="hidden" class="form-control " id="user_ID" value="<%= client._id %>">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Komentariya qoldiring</label>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                                <button id="sendContact" class="btn btn-success">Jo'natish</button>
+                            </div>
+                            <% }else {%>
+                                <div></div>
+                                <% }%>
+
+
+
+                                    <div class="col-md-12m mt-5">
+                                        <div class="d-flex align-items-center justify-content-center vh-100">
+                                            <div class="container">
+                                                <div class="row justify-content-center mb-4">
+                                                    <div class="col-lg-12">
+                                                        <h5>Comments</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center mb-4">
+                                                    <div class="col-lg-12">
+                                                        <div class="comments">
+
+
+
+                                                            <% for (let item of all_comment) {%>
+                                                                <div class="comment d-flex mb-4 col-md-12">
+                                                                    <!-- <div class="flex-shrink-0">
+                                                                    <div class="avatar avatar-sm rounded-circle">
+                                                                        <img class="avatar-img" src="https://uifaces.co/our-content/donated/AW-rdWlG.jpg" alt="">
+                                                                    </div>
+                                                                </div> -->
+                                                                    <div class="flex-grow-1 ms-2 ms-sm-3 col-md-12">
+                                                                        <div class="comment-meta d-flex align-items-baseline">
+                                                                            <h6 class="me-2 mr-5">
+                                                                                <%= item.user_ID.name %>
+                                                                            </h6>
+                                                                            <span class="text-muted"> <%= moment(item.date).format("DD-MM-YYYY  -- hh:mm:ss") %></span>
+                                                                        </div>
+                                                                        <div class="comment-body">
+                                                                            <%= item.message  %>
+                                                                        </div>
+
+                                                                        <a href="/reply/<%= item._id  %>" class="btn btn-success mt-1">Muhokamalar </a>
+                                                                        <div class="col-md-12 mt-3">
+                                                                            <div style="border: 2px solid rgb(255, 25, 25); border-radius: 5px; padding: 10px;" class="mb-3">
+                                                                                <input name="message" id="message_reply" class="form-control">
+                                                                                <input type="hidden" id="comment_ID" class="form-control" value="<%= item._id  %>">
+                                                                                <button class="btn btn-success mt-1" id="button_textarea_cancel" type="button">Reply</button>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <% } %>
+
+
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="seomun_sidebar">
+                    <div class="search_widget sidebar_widget_box">
+                        <div class="sidebar_widget_title">
+                            <h3>Search</h3>
+                        </div>
+                        <form method="GET" action="/search">
+                            <input type="search" name="name" class="form_control" placeholder="Izlash ...">
+                            <button type="submit" class="search_btn" value="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- category_ID -->
+                    <div class="categroies_widget sidebar_widget_box">
+                        <div class="sidebar_widget_title">
+                            <h3>Categories</h3>
+                        </div>
+                        <% for (let item of categories) {  %>
+                            <ul class="categories_list text-left">
+                                <li>
+                                    <a href="">
+                                        <%=item.name  %> <span>(05)</span></a>
+                                </li>
+                            </ul>
+                            <% } %>
+                    </div>
+                    <!-- feed -->
+                    <div class="feeds_widget sidebar_widget_box">
+                        <div class="sidebar_widget_title">
+                            <h3>Feeds</h3>
+                        </div>
+                        <div class="feeds_single">
+                            <div class="feeds_images">
+                                <img src="/assets/images/thumb_1.jpg" class="images-fluid" alt="">
+                            </div>
+                            <div class="feeds_info">
+                                <h6><a href="#">Alonso Kelina Falao Asiano Pero</a></h6>
+                                <p><i class="far fa-clock"></i>6 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="feeds_single">
+                            <div class="feeds_images">
+                                <img src="/assets/images/thumb_2.jpg" class="images-fluid" alt="">
+                            </div>
+                            <div class="feeds_info">
+                                <h6><a href="#">It is a long established fact that a reader</a></h6>
+                                <p><i class="far fa-clock"></i>6 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="feeds_single">
+                            <div class="feeds_images">
+                                <img src="/assets/images/thumb_3.jpg" class="images-fluid" alt="">
+                            </div>
+                            <div class="feeds_info">
+                                <h6><a href="#">Many desktop publish packages and web</a></h6>
+                                <p><i class="far fa-clock"></i>6 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="feeds_single">
+                            <div class="feeds_images">
+                                <img src="/assets/images/thumb_4.jpg" class="images-fluid" alt="">
+                            </div>
+                            <div class="feeds_info">
+                                <h6><a href="#">Various versions have evolved over the years</a></h6>
+                                <p><i class="far fa-clock"></i>6 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="feeds_single">
+                            <div class="feeds_images">
+                                <img src="/assets/images/thumb_5.jpg" class="images-fluid" alt="">
+                            </div>
+                            <div class="feeds_info">
+                                <h6><a href="#">Photo booth anim 8-bit PBR 3 wolf moon.</a></h6>
+                                <p><i class="far fa-clock"></i>6 Hours ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tag -->
+                    <div class="tags_widget sidebar_widget_box">
+                        <div class="sidebar_widget_title">
+                            <h3>Tags</h3>
+                        </div>
+                        <ul class="tags_list">
+                            <li><a href="#" class="tag_btn_1">Travel</a></li>
+                            <li><a href="#" class="tag_btn_2">Lifestyle</a></li>
+                            <li><a href="#">Photo</a></li>
+                            <li><a href="#">Adventures</a></li>
+                            <li><a href="#" class="tag_btn_1">Musician</a></li>
+                            <li><a href="#" class="tag_btn_3">08</a></li>
+                            <li><a href="#" class="tag_btn_1">Travel</a></li>
+                            <li><a href="#" class="tag_btn_2">Lifestyle</a></li>
+                            <li><a href="#">Photo</a></li>
+                            <li><a href="#">Adventures</a></li>
+                            <li><a href="#" class="tag_btn_1">Musician</a></li>
+                            <li><a href="#" class="tag_btn_3">08</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script>
+    const button_textarea_cancel = document.getElementById('button_textarea_cancel');
+
+    button_textarea_cancel.addEventListener("click", () => {
+
+        const message_reply = document.getElementById('message_reply')
+        const user_ID = document.getElementById('user_ID')
+        const comment_ID = document.getElementById('comment_ID')
+
+        axios({
+                url: "/reply/create",
+                method: "POST",
+                data: {
+                    message: message_reply.value,
+                    user_ID: user_ID.value,
+                    comment_ID: comment_ID.value
+                }
+            })
+            .then(res => {
+                // console.log(res.data)
+                location.reload()
+            })
+
+
+    })
+
+
+
+
+    // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- - _
+    const sendContact = document.getElementById('sendContact');
+    sendContact.addEventListener("click", () => {
+        const message = document.getElementById('message')
+        const user_ID = document.getElementById('user_ID')
+        const news_ID = document.getElementById('news_ID')
+
+        axios({
+                url: "/comment/create",
+                method: "POST",
+                data: {
+                    message: message.value,
+                    user_ID: user_ID.value,
+                    news_ID: news_ID.value,
+                }
+            })
+            .then(res => {
+                // console.log(res.data)
+                location.reload()
+            })
+
+
+    })
+</script>

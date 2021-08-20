@@ -1,0 +1,42 @@
+<div class="pt-3 pb-3 pl-3">
+    <h4>Yangiliklarni tahrirlash</h4>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6 mt-3">
+        <form method="POST" action="<%=`/news/${result._id}?_method=PUT`%>" class="col-md-8">
+            <div class="mb-3">
+                <label>News Title</label>
+                <input type="text" class="form-control" value="<%= result.title %>" name="title" />
+            </div>
+            <div class="mb-3">
+                <label>Description</label>
+                <input type="text" class="form-control" value="<%= result.description %>" name="description" />
+            </div>
+            <div class="mb-3">
+                <label>  TAG </label>
+                <input type="text" class="form-control" value="<%= result.tag %>" name="tag" />
+            </div>
+            <div class="mb-3">
+                <label>Category_ID</label>
+                <input type="text" class="form-control" value="<%= result.category_ID %>" name="category_ID" />
+            </div>
+
+            <button type="submit" class="btn btn-primary col-md-5 mt-3">Saqlash</button>
+        </form>
+    </div>
+
+
+    <div class="col-md-6 mt-3">
+        <form method="POST" action="<%=`/news/image/${result._id}?_method=PUT`%>" class="col-md-8" enctype="multipart/form-data">
+
+            <img src="/convert/<%= result.image %> " alt="">
+            <div class="mb-3">
+                <label>Rasmni yuklash</label>
+                <input type="file" name="image" />
+            </div>
+            <button type="submit" class="btn btn-primary col-md-5 mt-3">Saqlash</button>
+        </form>
+    </div>
+</div>

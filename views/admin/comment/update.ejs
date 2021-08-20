@@ -1,0 +1,27 @@
+<div class="pt-3 pb-3 pl-3">
+    <h4>Comment tahrirlash</h4>
+</div>
+
+
+<div class="row">
+    <div class="col-md-10 mt-3">
+        <form method="POST" action="<%=`/user/${result._id}?_method=PUT`%>" class="col-md-8">
+            <div class="mb-3">
+                <label>Commentariya kiriting </label>
+                <input type="text" class="form-control" value="<%= result.message %>" name="message" />
+            </div>
+
+            <div class="mb-3">
+                <label>Yangilik ID kiriting </label>
+                <input type="text" class="form-control" value="<%= result.news_ID %>" name="news_ID" />
+            </div>
+
+            <div class="mb-3">
+                <label>Foydalanuvchi ID kiriting </label>
+                <input type="text" class="form-control" value="<%= result.user_ID %>" name="user_ID" />
+            </div>
+
+            <button type="submit" class="btn btn-primary col-md-5 mt-3">Saqlash</button>
+        </form>
+    </div>
+</div>

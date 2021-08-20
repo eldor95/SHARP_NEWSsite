@@ -1,0 +1,910 @@
+@media only screen and (min-width: 1421px) and (max-width: 1920px){
+    .main_menu ul li a {
+        font-size: 14px;
+    }
+}
+/* Learge Layout: 1280px. */
+@media only screen and (min-width: 1360px) and (max-width: 1420px) {
+    .header_container {
+        max-width: 1260px;
+        margin: 0 auto;
+    }
+
+    .header_container_2 {
+        max-width: 1260px;
+        margin: 0 auto;
+    }
+
+    .menu_button a.phone_btn {
+        font-size: 10px;
+    }
+
+    .works_container {
+        max-width: 1200px;
+    }
+
+    .works_content_box h2 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1360px) {
+    .header_container {
+        max-width: 1200px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .header_container_2 {
+        max-width: 1170px;
+    }
+
+    .header_menu.header_menu_1 {
+        max-width: 1100px;
+    }
+
+    .main_menu ul li a {
+        font-size: 10px;
+    }
+
+    .menu_button a.phone_btn {
+        font-size: 10px;
+        padding: 15px 25px;
+    }
+
+    .menu_button_box ul li {
+        margin-left: 20px;
+    }
+}
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .breadcrumb_title h2 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .header_container_2 {
+        max-width: 960px;
+    }
+
+    .header_container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .main_menu ul li {
+        margin-left: 15px;
+    }
+
+    .main_menu ul li a {
+        font-size: 12px;
+    }
+
+    .menu_button_box ul li {
+        margin-left: 10px;
+    }
+
+    .menu_button a.phone_btn {
+        padding: 15px 15px;
+        font-size: 8px;
+    }
+
+    .menu_button_box .select_option {
+        margin-right: 10px;
+    }
+
+    .menu_button_box ul li:before {
+        margin-right: 20px;
+    }
+
+    .header_content_box h2 {
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    .seomun_content_box h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .skill_box .chart_2 {
+        width: 90px;
+        height: 90px;
+    }
+
+    .skill_box .chart_2 .circle_info {
+        padding-top: 20px;
+    }
+
+    .skill_box h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .skill_box h6 {
+        font-size: 10px;
+    }
+
+    .skill_box .chart_2 canvas {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .seomun_works_nav .works_nav_btn {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .service_box_1 {
+        padding: 15px;
+    }
+
+    .seo_features_box {
+        padding: 30px 30px;
+    }
+
+    .seo_features_box .seomun_info h3 {
+        font-size: 22px;
+    }
+
+    /*team.html css*/
+    .team_box.team_box_2 {
+        margin-bottom: 60px;
+    }
+
+    .team_box_2 .team_info {
+        transform: translate(0%, 0%);
+        width: 100%;
+        padding: 20px;
+        height: 90px;
+        position: relative;
+    }
+
+    .team_social_2 ul li {
+        margin-bottom: 21px;
+    }
+
+    /*testimonial.html css*/
+    .testimonial_content_box h2 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .seomun_content_box h2 span {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .testimonial_review_box {
+        margin-top: 60px;
+    }
+
+    .testimonial_slide .slick-prev {
+        top: -31.5%;
+        left: 108%;
+    }
+
+    .testimonial_slide .slick-next {
+        top: -31.5%;
+        right: -31%;
+    }
+
+    .card-header h5 {
+        padding-left: 30px;
+    }
+
+    .seomun_section_title h2 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .features_box_2 {
+        padding: 30px;
+    }
+
+    .feature_content_tab .seomun_feature_nav ul.nav-tabs li a.feature_nav_btn {
+        padding: 35px 37px;
+    }
+
+    .overlay_title h2 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .work_slide .slick-prev {
+        top: -46%;
+        left: 84%;
+    }
+
+    .work_slide .slick-next {
+        top: -45%;
+        right: 6%;
+    }
+
+    .short_filer p {
+        margin-right: 10px;
+        font-size: 13px;
+    }
+
+    .short_filer select {
+        padding: 0 10px;
+        width: 110px;
+    }
+
+    .product_search .search_btn {
+        right: 15px;
+    }
+
+    .tags_area ul.tags_list li a {
+        padding: 15px 10px;
+    }
+
+    .tags_area h4 {
+        font-size: 20px;
+    }
+
+    .tags_area ul.social_link_2 li {
+        margin-left: 10px;
+    }
+
+    .prev_next_text h4 {
+        font-size: 16px;
+    }
+
+    .sidebar_widget_title h3:before,
+    .sidebar_widget_title h3:after {
+        display: none;
+    }
+
+    ul.social_widget_link li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .portfolio_box .seomun_info {
+        width: 265px;
+        height: 117px;
+        padding: 25px 0 0;
+    }
+
+    span.seomun_span {
+        margin-left: 40px;
+    }
+
+    .portfolio_box .seomun_info h4 {
+        margin-left: 40px;
+    }
+
+    span.seomun_span:before {
+        width: 25px;
+    }
+
+    .portfolio_box .seomun_info span.seomun_span:before {
+        top: 37px;
+        left: 8px;
+    }
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .index_logo,
+    .index_button {
+        text-align: center !important;
+    }
+
+    .sidebar_icon {
+        display: none;
+    }
+
+    .breadcrumb_title h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .seomun_logo,
+    .seomun_menu,
+    .menu_button,
+    .menu_button_box {
+        display: none;
+    }
+
+    .skill_box,
+    .team_box,
+    .seomun_box,
+    .seomun_content_box,
+    .prcing_box,
+    .seomun_img_box,
+    .seo_img_box,
+    .counter_box,
+    .product_thumb_slide,
+    .blog_box,
+    .widget_box,
+    .contact_info_box {
+        margin-bottom: 60px;
+    }
+
+    .header_img_box img {
+        width: 100%;
+    }
+
+    .seo_features_box {
+        padding: 30px;
+    }
+
+    .seomun_content_box h2 span {
+        font-size: 40px;
+    }
+
+    .seomun_content_box h2 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .works_content_box {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .works_content_box span.seomun_span {
+        margin-left: 0;
+    }
+
+    .works_content_box span.seomun_span:before {
+        display: none;
+    }
+
+    .seomun_works {
+        margin-left: 0px;
+    }
+
+    .seomun_works_nav {
+        margin-bottom: 30px;
+    }
+
+    .team_info h4 {
+        font-size: 20px;
+    }
+
+    .team_box.team_box_2 {
+        margin-bottom: 60px;
+    }
+
+    .team_box_2 .team_info {
+        transform: translate(0%, 0%);
+        width: 100%;
+        padding: 20px;
+        height: 90px;
+        position: relative;
+    }
+
+    .team_social_2 ul li {
+        margin-bottom: 21px;
+    }
+
+    .testimonial_review_box {
+        margin-top: 60px;
+    }
+
+    .testimonil_input {
+        display: none;
+    }
+
+    .about_img_box img {
+        width: 100%;
+    }
+
+    .faq_info_box {
+        padding: 20px;
+    }
+
+    .faq_info_box .seomun_info h3 {
+        font-size: 18px;
+    }
+
+    .faq_info_box .seomun_icon i {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .faq_info_box .seomun_info p {
+        font-size: 12px;
+    }
+
+    .seomun_faq_info {
+        margin-top: -100px;
+    }
+
+    /*shop.html*/
+    .grid_filter {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .short_filer {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .short_filer p {
+        margin-bottom: 30px;
+    }
+
+    .seomun_feature_nav ul.nav-tabs li a.feature_nav_btn {
+        padding: 20px 35px
+    }
+
+    .tags_area.text-right {
+        text-align: center !important;
+        margin-top: 30px;
+    }
+
+    .tags_area {
+        text-align: center;
+    }
+
+    .tags_list {
+        text-align: center;
+    }
+
+    .prev_next_text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .prev_next_text.text-right {
+        text-align: center !important;
+        margin-top: 30px;
+    }
+
+    .facelity_feature_nav {
+        float: left;
+    }
+
+    .seomun_img_box.seomun_video img {
+        width: 100%;
+    }
+
+    .analytics_img {
+        text-align: center;
+    }
+
+    .portfolio_box .seomun_info {
+        width: 305px;
+        height: 117px;
+        padding: 25px 0 0;
+    }
+
+    span.seomun_span {
+        margin-left: 55px;
+    }
+
+    .portfolio_box .seomun_info h4 {
+        margin-left: 55px;
+    }
+
+    span.seomun_span:before {
+        width: 40px;
+    }
+
+    .portfolio_box .seomun_info span.seomun_span:before {
+        top: 37px;
+        left: 8px;
+    }
+    .seomun_img_box img {
+        width: 100%;
+    }
+}
+
+/* Mobile Layout: 360px. */
+@media only screen and (max-width: 767px) {
+
+    .index_logo,
+    .index_button {
+        text-align: center !important;
+    }
+
+    .index_button {
+        display: none;
+    }
+
+    .sidebar_icon {
+        display: none;
+    }
+
+    .seomun_section_title h2 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .seomun_img_box img {
+        width: 100%;
+    }
+
+    .seomun_content_box h2 span {
+        font-size: 28px;
+    }
+
+    .seomun_content_box h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .seomun_logo,
+    .seomun_menu,
+    .menu_button,
+    .menu_button_box {
+        display: none;
+    }
+
+    .header_img_box img {
+        width: 100%;
+    }
+
+    .header_content_box a.seomun_btn,
+    .header_content_box_2 a.seomun_btn_2 {
+        margin-bottom: 20px;
+    }
+
+    .works_content_box {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .works_content_box span.seomun_span {
+        margin-left: 0;
+    }
+
+    .works_content_box span.seomun_span:before {
+        display: none;
+    }
+
+    .seomun_works_nav {
+        margin-bottom: 40px;
+    }
+
+    .breadcrumb_link {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .breadcrumb_title h2 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .skill_box,
+    .team_box,
+    .seomun_box,
+    .seomun_content_box,
+    .prcing_box,
+    .seomun_img_box,
+    .seo_img_box,
+    .counter_box,
+    .product_thumb_slide,
+    .blog_box,
+    .widget_box,
+    .contact_info_box {
+        margin-bottom: 60px;
+    }
+
+    /*faq.html css*/
+    .card-header h5 {
+        padding-left: 30px;
+    }
+
+    .faq_right_box {
+        display: none;
+    }
+
+    /*team.html css*/
+    .team_info h4 {
+        font-size: 16px;
+    }
+
+    .team_box_1 .team_info {
+        width: 90%;
+        left: 15px;
+    }
+
+    .team_box.team_box_2 {
+        margin-bottom: 60px;
+    }
+
+    .team_box_2 .team_info {
+        transform: translate(0%, 0%);
+        width: 100%;
+        padding: 40px;
+        height: 130px;
+        position: relative;
+    }
+
+    .team_social_2 ul li {
+        margin-bottom: 25px;
+    }
+
+    /*testimonial.html*/
+    .testimonial_box {
+        padding: 80px 20px;
+    }
+
+    .testimonial_review_box {
+        padding: 0px 20px 20px;
+        margin-top: 70px;
+    }
+
+    .review_text h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .review_text h5 {
+        font-size: 16px;
+    }
+
+    .client_img {
+        position: absolute;
+        top: -7%;
+        left: 35%;
+    }
+
+    /*smm_service.html*/
+    .tab_content_box h2 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .tab_content_box h5 {
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .overlay_title h2 {
+        font-size: 34px;
+        color: #fff;
+        line-height: 45px;
+    }
+
+    .about_img_box img {
+        width: 100%;
+    }
+
+    .sb_top {
+        margin-top: 0px;
+    }
+
+    /*ppc_service.html*/
+    .single_content_list {
+        display: block;
+    }
+
+    .single_content_list .single_content_icon {
+        float: none;
+        margin-bottom: 40px;
+    }
+
+    .single_content_list .single_content_info {
+        padding-left: 0px;
+    }
+
+    .video_play .play_btn {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    /*seo_service.html*/
+    .seo_features_box {
+        padding: 50px 20px;
+        margin-bottom: 30px;
+    }
+
+    /*testimonial.html*/
+    .works_content_box {
+        margin-bottom: 40px;
+    }
+
+    .seomun_works {
+        margin-left: 0px;
+    }
+
+    .testimonil_input {
+        float: right;
+        display: none;
+    }
+
+    /*shop.html*/
+    .grid_filter {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .short_filer {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .short_filer p {
+        margin-bottom: 30px;
+    }
+
+    /*Shop_details.html*/
+    .seomun_feature_nav ul.nav-tabs li a.feature_nav_btn {
+        padding: 20px 35px;
+    }
+
+    .seomun_feature_nav:after {
+        display: none;
+    }
+
+    /* Start blog_grid.html */
+    .seomun_pagination ul li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-bottom: 15px;
+    }
+
+    /*blog_details.html*/
+    .single_blog_content {
+        padding: 20px;
+    }
+
+    .single_content_box h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .tags_area {
+        text-align: center;
+    }
+
+    .tags_area ul.tags_list li {
+        margin-right: 10px;
+    }
+
+    .tags_area ul.tags_list li a {
+        padding: 10px 15px;
+    }
+
+    .tags_area.text-right {
+        text-align: center !important;
+        margin-top: 30px;
+    }
+
+    .tags_list {
+        text-align: center;
+    }
+
+    .prev_next_text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .prev_next_text.text-right {
+        text-align: center !important;
+        margin-top: 30px;
+    }
+
+    .about_admin_area {
+        padding: 20px;
+    }
+
+    .admin_images {
+        left: 35%;
+    }
+
+    .post_form {
+        padding: 20px;
+    }
+
+    .comment_list_area .single_comment {
+        display: block;
+    }
+
+    .comment_list_area .single_comment .comment_text {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    /*contact.html css*/
+    .contact_info_box {
+        padding: 20px;
+    }
+
+    .contact_info_box .info_title h2 {
+        font-size: 28px;
+    }
+
+    .info_single_box {
+        display: block;
+    }
+
+    .info_single_box .info_icon {
+        float: none;
+    }
+
+    .info_single_box .info_text {
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+
+    .facelity_feature_nav {
+        float: left;
+    }
+
+    .seomun_img_box.seomun_video img {
+        width: 100%;
+    }
+
+    .analytics_img {
+        text-align: center;
+    }
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .admin_images {
+        left: 42%;
+    }
+
+    .client_img {
+        position: absolute;
+        top: -10%;
+        left: 40%;
+    }
+
+    .team_box_1 .team_info {
+        left: 22px;
+    }
+
+    .facelity_feature_nav {
+        float: left;
+    }
+
+    .feature_content_tab .tab-content {
+        padding: 100px 0px;
+    }
+
+    .seomun_feature_nav ul.nav-tabs {
+        justify-content: center;
+    }
+
+    .facelity_feature_nav ul {
+        margin-top: 16px;
+    }
+
+    .facelity_feature_nav input {
+        width: 290px;
+    }
+
+    .facelity_feature_nav ul li a.feature_tab_btn {
+        width: 130px;
+        height: 59px;
+    }
+
+    .portfolio_box .seomun_info {
+        left: 20px;
+    }
+
+    .specifications_table th {
+        width: 48%;
+        font-size: 12px;
+    }
+
+    .specifications_table td {
+        font-size: 12px;
+    }
+
+    .seomun_btn {
+        padding: 16px 40px;
+    }
+    .seomun_feature_nav ul.nav-tabs li {
+    margin-bottom: 20px;
+}
+}
