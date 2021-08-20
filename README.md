@@ -1,1 +1,0 @@
-# SHARP_NEWSsite
