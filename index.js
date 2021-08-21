@@ -20,11 +20,12 @@ const store = new MongoDBSession({
     uri: MongoURI,
     collection: "MYSession",
 });
+
 app.use(
     methodOverride("_method", {
         methods: ["POST", "GET"],
-    })
-);
+    }));
+
 app.locals.moment = require("moment");
 app.use(expressLayouts);
 

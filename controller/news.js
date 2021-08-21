@@ -4,7 +4,6 @@ const path = require('path')
 const fs = require('fs')
 const sharp = require('sharp');
 const Category = require('../module/category');
-const { count } = require("../module/category");
 
 
 
