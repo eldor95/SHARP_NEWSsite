@@ -43,7 +43,7 @@ exports.updateOne = async(req, res, next) => {
         })
         .catch((error) => {
             res.status(400).json({
-                message: " ma;imot uzgarmadi",
+                message: " malumot uzgarmadi",
                 data: error
             });
         })

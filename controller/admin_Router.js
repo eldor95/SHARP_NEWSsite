@@ -12,8 +12,6 @@ exports.dashboard = async(req, res, next) => {
     const userCount = await Users.find().count()
     const categoryCount = await Category.find().countDocuments()
 
-    console.log(newsCount)
-
     // const user = req.session.user;
     res.render("./admin/dashboard", {
         layout: "./admin",

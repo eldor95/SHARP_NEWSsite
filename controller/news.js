@@ -85,8 +85,8 @@ exports.getCall = async(req, res, next) => {
         //  hisoblash
         {
             $project: {
-                _id: 1,
-                count: 1,
+                _id: 1, //id sini chiqarish
+                count: 1, //sonini chiqarish
 
 
             },
